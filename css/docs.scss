@@ -1,0 +1,324 @@
+$font-size: 16px;
+$color: #1999ce;
+$lightgray: #f5f5f5;
+
+
+//#428bca;
+
+/*
+@font-face{
+  font-family: 'centrale_sans_roundedbook';
+  src: url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.eot');
+  src: url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.woff2') format('woff2'), url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.woff') format('woff'), url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.ttf') format('truetype'), url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.svg#centrale_sans_roundedbook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: (22/15);
+    padding-top: 90px;
+    color: #3d3c3f;
+}
+
+h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6
+{
+}
+
+a
+{
+    color: darken($color, 5%);
+}
+
+.chapters
+{
+    position: fixed;
+    top: 52px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.chapters li
+{
+    font-size: $font-size;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.chapters li:last-child
+{
+    border-bottom: none;
+}
+
+.chapters li.active > a
+{
+}
+
+.chapters li li
+{
+    list-style: none;
+    border: none;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.chapters li a.active
+{
+    font-weight: bold;
+}
+
+.chapters li ul
+{
+    padding-left: 25px;
+    margin-top: 5px;
+}
+
+.content
+{
+    font-size: $font-size;
+    margin-bottom: 140px;
+}
+
+.content p,
+ .content li
+{
+}
+
+.content p.lead
+{
+    font-size: floor($font-size*1.33);
+}
+
+.content blockquote
+{
+    font-size: floor($font-size*1.25);
+    font-weight: 300;
+    border-left-color: lighten($color, 15%);
+}
+
+.content h1
+{
+    font-size: floor($font-size*2.5);
+    margin-bottom: floor($font-size * 1.5);
+    margin-top: 0px;
+}
+
+.content h2
+{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.content hr
+{
+    width: 150px;
+    text-align: left;
+    margin: 20px 0 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.content img
+{
+    max-width: 100%;
+    height: auto;
+    border: 12px solid #eee;
+    margin: 10px auto 10px;
+}
+
+.content img.big
+{
+    max-width: 100%;
+    width: 824px;
+}
+
+.content img.small
+{
+    max-width: 100%;
+    width: 320px;
+}
+
+.content img.very-big
+{
+    max-width: 100%;
+    width: 100%;
+}
+
+.content img.small
+{
+    width: 500px;
+}
+
+.content img.gif
+{
+    width: 824px;
+}
+
+.content li
+{
+    margin: 10px 0;
+}
+
+.top-box
+{
+    display: none;
+    width: 150px;
+    height: 150px;
+    color: white;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.topics
+{
+    margin-top: 77px;
+    position: fixed;
+    text-align: left;
+    border-left: 1px solid #ccc;
+    padding-left: 15px;
+}
+
+.topics p
+{
+}
+
+.topics a
+{
+}
+
+.navbar-brand img
+{
+    max-height: 28px;
+    position: relative;
+    top: -3px;
+}
+
+.navbar li.selected
+{
+    background-color: $color;
+}
+
+.navbar li.selected:hover
+{
+    background-color: darken($color, 5%);
+}
+
+.navbar li.selected a
+{
+    color: white;
+}
+
+.navbar li.selected a:hover
+{
+    color: white;
+}
+
+.post-categories
+{
+    padding-left: 0;
+    display: inline;
+}
+
+.post-categories li
+{
+    display: inline;
+}
+
+.post-categories li:after
+{
+    content: ",";
+}
+
+.post-categories li:last-child:after
+{
+    content: "";
+}
+
+.topics ul
+{
+    padding-left: 0;
+}
+
+.topics li
+{
+    list-style-type: none;
+}
+
+.sidebar-list
+{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.search-form
+{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.search-form span
+{
+    display: none;
+}
+
+.taxonomy-list
+{
+    list-style-type: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: $lightgray;
+}
+
+.content-index h2
+{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.taxonomy-list ul
+{
+    padding-left: 0px;
+}
+
+.taxonomy-list li li
+{
+    list-style-type: none;
+    font-weight: normal;
+}
+
+.modal-body h2
+{
+    display: none;
+}
+
+.post-meta
+{
+}
+
+.subpage
+{
+    margin-bottom: 50px;
+}
+
+.subpage .more-link
+{
+    display: none;
+}
+

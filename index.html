@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" wp-site wp-site-is-master-page wp-site-theme-name="PinegrowDocs" wp-site-theme-slug="pinegrow_docs" wp-site-themes-folder="/Users/Matjaz/Dropbox/Development/DVWeb/DV/Pinegrow/lab/pgwordpress/wp-content/themes/PinegrowDocs" wp-site-preview-url="http://wptest">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Learn how to build Bootstrap, Foundation or plain HTML webpages quickly with Pinegrow Web Editor">
+        <meta name="author" content="Pinegrow Web Editor">
+        <title>Pinegrow Web Editor</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="css/docs.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-default hidden-print navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="crsa_id_7">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <a class="navbar-brand" href="http://pinegrow.com">
+                    <img src="assets/img/pinegrow-logo.png" />
+                </a>
+                <div class="collapse navbar-collapse" id="crsa_id_7">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="http://pinegrow.com">Features</a>
+                        </li>
+                        <li class="selected">
+                            <a href="/">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="http://pinegrow.com">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row" wp-site-content>
+                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar wp-template-part wp-template-part-slug="sidebar">
+                    <ul class="sidebar-list">
+                        <li class="categories" wp-list-categories wp-list-categories-pad-counts="true">Categories
+                            <ul> 
+                                <li class="cat-item cat-item-3">
+                                    <a href="http://wptest/category/category-one/" title="This is category one description.">Category One</a>
+                                </li>
+                                <li class="cat-item cat-item-4">
+                                    <a href="http://wptest/category/category-two/">Category Two</a>
+                                </li>
+                                <li class="cat-item cat-item-1">
+                                    <a href="http://wptest/category/uncategorized/">Uncategorized</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul wp-register-sidebar="Sidebar" wp-register-sidebar-id="docs-sidebar" wp-dynamic-sidebar="docs-sidebar" wp-dynamic-sidebar-set="element"> 
+                        <li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"> 
+                            <a href="http://wptest/sample-page/">Sample Page</a> 
+                        </li>                         
+                        <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"> 
+                            <a href="http://wordpress.org">WordPress</a> 
+                        </li>                         
+                        <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"> 
+                            <a href="http://pinegrow.com">Pinegrow</a> 
+                        </li>                         
+                    </ul>
+                    <button type="button" class="btn btn-default btn-block" data-target="#topicsModal" data-toggle="modal">Show topics</button>
+                </div>
+                <div class="col-md-offset-2 content col-md-10 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-4 content-index">
+                    <div class="row" wp-template-part wp-template-part-slug="topics-list" wp-include-template-part wp-include-template-part-slug="topics-list">
+                        <div class="col-md-12">
+                            <h2>Topics</h2> 
+                        </div>
+                        <div class="col-md-3"> 
+                            <ul class="taxonomy-list" wp-page-template>
+                                <li class="frameworks" wp-list-categories="" wp-list-categories-orderby="name" wp-list-categories-order="ASC" wp-list-categories-show-count="true" wp-list-categories-taxonomy="frameworks" wp-list-categories-title-li="Frameworks:">Frameworks:
+                                    <ul> 
+                                        <li class="cat-item cat-item-10">
+                                            <a href="http://wptest/framework/bootstrap/">Bootstrap</a> (1)
+                                        </li>
+                                    </ul>
+                                </li>                                 
+                            </ul>
+                        </div>
+                        <div class="col-md-3"> 
+                            <ul class="taxonomy-list">
+                                <li class="workingwith" wp-list-categories="" wp-list-categories-orderby="name" wp-list-categories-order="ASC" wp-list-categories-show-count="true" wp-list-categories-taxonomy="workingwith" wp-list-categories-title-li="Working with:">Working with:
+                                    <ul>
+                                        <li class="cat-item-none">No categories</li>
+                                    </ul>
+                                </li>                                 
+                            </ul>
+                        </div>
+                        <div class="col-md-3"> 
+                            <ul class="taxonomy-list">
+                                <li class="workingwith" wp-list-categories="" wp-list-categories-orderby="name" wp-list-categories-order="ASC" wp-list-categories-show-count="true" wp-list-categories-taxonomy="blocks" wp-list-categories-title-li="Blocks:">Working with:
+                                    <ul>
+                                        <li class="cat-item-none">No categories</li>
+                                    </ul>
+                                </li>                                 
+                            </ul>
+                        </div>
+                        <div class="col-md-3"> 
+                            <ul class="taxonomy-list">
+                                <li class="workingwith" wp-list-categories="" wp-list-categories-orderby="name" wp-list-categories-order="ASC" wp-list-categories-show-count="true" wp-list-categories-taxonomy="wordpress" wp-list-categories-title-li="WordPress:">Working with:
+                                    <ul>
+                                        <li class="cat-item-none">No categories</li>
+                                    </ul>
+                                </li>                                 
+                            </ul>
+                        </div>
+                    </div>
+                    <h2>Latest articles</h2>
+                    <article class="vsi active miskolin" wp-loop wp-loop-first-classes="miskolin mmmmmm" wp-the-id>
+                        <h3 class="entry-title"><a href="#" wp-href="post_permalink" wp-the-title="">Another great post</a></h3>
+                        <p wp-the-excerpt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt imperdiet sem, at semper dui blandit et. Mauris pretium mattis nunc non ornare.</p>
+                        <img width="800" height="510" src="http://wptest/wp-content/uploads/2015/01/pine_sunset-800x510.jpg" class="attachment-post-thumbnail wp-post-image" alt="pine_sunset" wp-the-post-thumbnail="">
+                        <div class="post-meta" wp-include-template-part="" wp-include-template-part-slug="post-meta" data-pg-collapsed="">
+                            <p wp-the-tags="">Tags: <a href="#" rel="tag">tag1</a>, <a href="#" rel="tag">tag2</a>, <a href="#" rel="tag">tag3</a></p>
+                            <div>
+                                Categories: 
+                                <ul class="post-categories" wp-the-category=""> 
+                                    <li> 
+                                        <a href="#" rel="category tag">Uncategorized</a> 
+                                    </li>                                     
+                                    <li> 
+                                        <a href="#" rel="category tag">Category One</a> 
+                                    </li>                                     
+                                    <li> 
+                                        <a href="#" rel="category tag">Category Two</a> 
+                                    </li>                                     
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-offset-0 col-md-2 hidden-print col-lg-2 col-lg-offset-0 hidden-xs hidden-sm hidden-md">
+</div>
+            </div>
+        </div>
+        <div class="modal fade pg-show-modal" id="topicsModal" tabindex="-1" role="dialog" aria-hidden="true"> 
+            <div class="modal-dialog"> 
+                <div class="modal-content"> 
+                    <div class="modal-header"> 
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>                         
+                        <h4 class="modal-title">Topics</h4> 
+                    </div>                     
+                    <div class="modal-body"> 
+                        <div class="row" wp-include-template-part wp-include-template-part-slug="topics-list">
+                            <div class="col-md-12">
+                                <h2>Topics</h2> 
+                            </div>
+                            <div class="col-md-3"> 
+                                <ul class="taxonomy-list">
+                                    <li class="frameworks">Frameworks:
+                                        <ul> 
+                                            <li class="cat-item cat-item-10">
+                                                <a href="http://wptest/framework/bootstrap/">Bootstrap</a> (1)
+                                            </li>
+                                        </ul>
+                                    </li>                                     
+                                </ul>
+                            </div>
+                            <div class="col-md-3"> 
+                                <ul class="taxonomy-list">
+                                    <li class="workingwith">Working with:
+                                        <ul>
+                                            <li class="cat-item-none">No categories</li>
+                                        </ul>
+                                    </li>                                     
+                                </ul>
+                            </div>
+                        </div>                         
+                    </div>                     
+                    <div class="modal-footer"> 
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script>
+
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-344271-72');
+            ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
