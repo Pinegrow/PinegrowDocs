@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" wp-site wp-site-is-master-page wp-site-theme-name="PinegrowDocs" wp-site-theme-slug="pinegrow_docs" wp-site-themes-folder="/Users/earnoud/sites/dev/pgwpblockswp43b4/wp-content/themes/docsbeta" wp-site-preview-url="http://docbeta.pinegrow.com:8888/">
+<html lang="en" wp-site wp-site-is-master-page wp-site-theme-name="PinegrowDocs" wp-site-theme-slug="pinegrow_docs" wp-site-themes-folder="/Users/earnoud/sites/dev/docbeta.pinegrow.com/wp-content/themes/docsbeta" wp-site-preview-url="http://docbeta.pinegrow.com:8888/">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,7 +51,7 @@
             <div class="row" wp-site-content>
                 <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar wp-template-part wp-template-part-slug="sidebar">
                     <ul class="sidebar-list">
-                        <li class="categories" wp-list-categories wp-list-categories-pad-counts="true">Categories
+                        <li class="categories" wp-list-categories wp-list-categories-pad-counts="true" wp-no-export data-pg-collapsed>Categories
                             <ul> 
                                 <li class="cat-item cat-item-3">
                                     <a href="http://wptest/category/category-one/" title="This is category one description.">Category One</a>
@@ -65,17 +65,27 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul wp-register-sidebar="Sidebar" wp-register-sidebar-id="docs-sidebar" wp-dynamic-sidebar="docs-sidebar" wp-dynamic-sidebar-set="element"> 
-                        <li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"> 
-                            <a href="http://wptest/sample-page/">Sample Page</a> 
-                        </li>                         
-                        <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"> 
-                            <a href="http://wordpress.org">WordPress</a> 
-                        </li>                         
-                        <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"> 
-                            <a href="http://pinegrow.com">Pinegrow</a> 
-                        </li>                         
-                    </ul>
+                    <li id="nav_menu-5" class="widget widget_nav_menu" wp-register-sidebar="Sidebar" wp-register-sidebar-id="docs-sidebar" wp-dynamic-sidebar="docs-sidebar" wp-dynamic-sidebar-set="element">
+                        <h3 class="widgettitle">Editing</h3>
+                        <div class="menu-editing-container">
+                            <ul id="menu-editing" class="menu">
+                                <li id="menu-item-719" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-719">
+                                    <a href="http://docbeta.pinegrow.com:8888/building-the-layout/">Building the layout</a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-718" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-718">
+                                            <a href="http://docbeta.pinegrow.com:8888/category/editing/editing-layout/">Layout</a>
+                                        </li>
+                                        <li id="menu-item-717" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-717">
+                                            <a href="http://docbeta.pinegrow.com:8888/category/editing/editing-elements/">Elements</a>
+                                        </li>
+                                        <li id="menu-item-716" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-716">
+                                            <a href="http://docbeta.pinegrow.com:8888/category/editing/editing-code/">Code</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                     <button type="button" class="btn btn-default btn-block" data-target="#topicsModal" data-toggle="modal">Show topics</button>
                 </div>
                 <div class="col-md-offset-2 content col-md-10 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-4 content-index">
