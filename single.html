@@ -17,64 +17,242 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
     <body>
-        <nav class="navbar navbar-default hidden-print navbar-fixed-top" role="navigation" data-pg-collapsed>
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" data-toggle="collapse" data-target="crsa_id_7">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <a class="navbar-brand" href="/">
-                    <img src="assets/img/pinegrow-logo.png" />
-                </a>
-                <div class="collapse navbar-collapse" id="crsa_id_7">
-                    <ul class="nav navbar-nav navbar-right">
+        <nav class="navbar navbar-default navbar-fixed-top hidden-print" role="navigation" data-pg-collapsed> 
+            <div class="container-fluid"> 
+                <div class="navbar-header"> 
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#crsa_id_7"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>                     
+                    <a class="navbar-brand" href="http://pinegrow.com/">
+                        <img src="assets/img/pinegrow-logo.png" />
+                    </a>                     
+                </div>                 
+                <div class="collapse navbar-collapse" id="crsa_id_7"> 
+                    <ul class="nav navbar-nav navbar-right" wp-nav-menu="Main" wp-nav-menu-type="bootstrap"> 
                         <li>
-                            <a href="/">Features</a>
-                        </li>
-                        <li class="selected">
-                            <a href="/docs/editing/layout.html">Documentation</a>
-                        </li>
-                        <li>
-                            <a href="/">Download</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                            <a href="#">Link</a>
+                        </li>                         
+                        <li class="dropdown"> 
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a> 
+                            <ul class="dropdown-menu"> 
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>                                 
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>                                 
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>                                 
+                                <li class="divider"></li>                                 
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>                                 
+                            </ul>                             
+                        </li>                         
+                    </ul>                     
+                </div>                 
+            </div>             
         </nav>
         <div class="container">
             <div class="row" wp-site-content>
                 <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar wp-get-sidebar-set="content" data-pg-collapsed>
-                    <div class="col-md-2 chapters hidden-print hidden-xs">
-                        <form role="search" method="get" class="search-form" action="http://wptest/">
-                            <label>
-                                <span class="screen-reader-text">Search for:</span>
-                                <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />
-                            </label>
-                            <input type="submit" class="search-submit" value="Search" />
-                        </form>                         
-                        <li class="categories" wp-list-categories>Categories        
-                            <ul> 
-                                <li class="cat-item cat-item-3"> 
-                                    <a href="http://wptest/category/category-one/" title="This is category one description.">Category One</a>
+                    <li id="nav_menu-5" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">Editing</h3> 
+                        <div class="menu-editing-container"> 
+                            <ul id="menu-editing" class="menu"> 
+                                <li id="menu-item-719" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-719"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/building-the-layout/">Layout</a>
                                 </li>
-                                <li class="cat-item cat-item-4"> 
-                                    <a href="http://wptest/category/category-two/">Category Two</a>
+                                <li id="menu-item-752" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-752"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/editing-elements/">Elements</a>
                                 </li>
-                                <li class="cat-item cat-item-1"> 
-                                    <a href="http://wptest/category/uncategorized/">Uncategorized</a>
+                                <li id="menu-item-753" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-753"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/editing-text/">Text</a>
+                                </li>
+                                <li id="menu-item-754" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-754"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/code-editing/">Code</a>
+                                </li>
+                                <li id="menu-item-755" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-755"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/using-javascript/">Javascript</a>
+                                </li>
+                                <li id="menu-item-756" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-756"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/category/editing/">Tutorials</a>
                                 </li>
                             </ul>
-                        </li>
-                    </div>                     
+                        </div>
+                    </li>
+                    <li id="nav_menu-6" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">Styling</h3> 
+                        <div class="menu-styling-container"> 
+                            <ul id="menu-styling" class="menu"> 
+                                <li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-760"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/style-your-page-with-css-2/">CSS Rules</a>
+                                </li>
+                                <li id="menu-item-761" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-761"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/using-variables-in-css-rules/">Variables</a>
+                                </li>
+                                <li id="menu-item-762" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-762"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/creating-responsive-layouts/">Responsive layouts</a>
+                                </li>
+                                <li id="menu-item-763" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-763"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/working-with-css-stylesheets/">Stylesheets</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_menu-7" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">Pages</h3> 
+                        <div class="menu-pages-container"> 
+                            <ul id="menu-pages" class="menu"> 
+                                <li id="menu-item-764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-764"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/working-with-pages/">Working with pages</a>
+                                </li>
+                                <li id="menu-item-765" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-765"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/multi-page-editing/">Multi-page editing</a>
+                                </li>
+                                <li id="menu-item-766" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-766"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/working-with-themes-and-templates/">Themes &#038; Templates</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_menu-8" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">Pro features</h3> 
+                        <div class="menu-pro-features-container"> 
+                            <ul id="menu-pro-features" class="menu"> 
+                                <li id="menu-item-734" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-734"> 
+                                    <a href="#">Projects</a>
+                                </li>
+                                <li id="menu-item-735" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-735"> 
+                                    <a href="#">Master pages</a>
+                                </li>
+                                <li id="menu-item-736" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-736"> 
+                                    <a href="#">Components</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_menu-9" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">Troubleshooting</h3> 
+                        <div class="menu-troubleshooting-container"> 
+                            <ul id="menu-troubleshooting" class="menu"> 
+                                <li id="menu-item-737" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-737"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/troubleshooting/">Troubleshooting</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_menu-17" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">Release notes</h3> 
+                        <div class="menu-release-notes-container"> 
+                            <ul id="menu-release-notes" class="menu"> 
+                                <li id="menu-item-759" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-759"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/category/release-notes/">Release notes</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_menu-10" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">WordPress</h3> 
+                        <div class="menu-wordpress-container"> 
+                            <ul id="menu-wordpress" class="menu"> 
+                                <li id="menu-item-742" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-742"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/creating-wordpress-themes-with-pinegrow-web-editor/">Creating WP Themes</a>
+                                </li>
+                                <li id="menu-item-743" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-743"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/converting-html-website-to-wordpress-theme/">Tutorial</a>
+                                </li>
+                                <li id="menu-item-741" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-741"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/creating-wordpress-themes/">Course</a>
+                                </li>
+                                <li id="menu-item-745" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-745"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/category/wordpress-themes/">Tutorials</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_menu-11" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">Bootstrap</h3> 
+                        <div class="menu-bootstrap-container"> 
+                            <ul id="menu-bootstrap" class="menu"> 
+                                <li id="menu-item-746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-746"> 
+                                    <a href="#">To-do</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_menu-12" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">Foundation</h3> 
+                        <div class="menu-foundation-container"> 
+                            <ul id="menu-foundation" class="menu"> 
+                                <li id="menu-item-747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-747"> 
+                                    <a href="#">To-do</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_menu-13" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">Blocks</h3> 
+                        <div class="menu-blocks-container"> 
+                            <ul id="menu-blocks" class="menu"> 
+                                <li id="menu-item-749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-749"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/bootstrap-blocks/">Bootstrap Blocks</a>
+                                </li>
+                                <li id="menu-item-748" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-748"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/bootstrap-blocks-for-wordpress/">Bootstrap Blocks for WP</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_menu-14" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">AngularJS</h3> 
+                        <div class="menu-foundation-container"> 
+                            <ul id="menu-foundation-1" class="menu"> 
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-747"> 
+                                    <a href="#">To-do</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_menu-15" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">Plugins</h3> 
+                        <div class="menu-plugins-container"> 
+                            <ul id="menu-plugins" class="menu"> 
+                                <li id="menu-item-750" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-750"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/using-font-awesome-plugin/">Font Awesome plugin</a>
+                                </li>
+                                <li id="menu-item-751" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-751"> 
+                                    <a href="#">AnimatorPro</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_menu-16" class="widget widget_nav_menu"> 
+                        <h3 class="widgettitle">Guides &#038; templates</h3> 
+                        <div class="menu-guides-templates-container"> 
+                            <ul id="menu-guides-templates" class="menu"> 
+                                <li id="menu-item-757" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-757"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/kelvin-pine-a-free-personal-resume-bootstrap-theme/">Kelvin Pine &#8211; resume theme</a>
+                                </li>
+                                <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-758"> 
+                                    <a href="http://docbeta.pinegrow.com:8888/fixing-a-broken-template-with-pinegrow/">Fixing Flatty theme</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>                     
+
+                    <button type="button" class="btn btn-default btn-block" data-target="#topicsModal" data-toggle="modal">
+                        Show topics    
+</button>
                 </div>
-                <div class="col-md-offset-2 content col-md-10 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-4">
-                    <h1>SINGLE.PHP</h1>
+                <div class="col-md-offset-2 content col-md-10 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-4" data-pg-collapsed>
                     <article wp-loop="">
                         <h1 class="entry-title" wp-the-title="" wp-the-title-set="content">Another great post</h1>
                         <div wp-the-excerpt="" wp-the-excerpt-set="content" class="lead" wp-if-has-excerpt="">
@@ -128,6 +306,46 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="modal fade pg-show-modal" id="topicsModal" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed> 
+            <div class="modal-dialog"> 
+                <div class="modal-content"> 
+                    <div class="modal-header"> 
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>                         
+                        <h4 class="modal-title">Topics</h4> 
+                    </div>                     
+                    <div class="modal-body"> 
+                        <div class="row" wp-include-template-part wp-include-template-part-slug="topics-list">
+                            <div class="col-md-12">
+                                <h2>Topics</h2> 
+                            </div>
+                            <div class="col-md-3"> 
+                                <ul class="taxonomy-list">
+                                    <li class="frameworks">Frameworks:
+                                        <ul> 
+                                            <li class="cat-item cat-item-10">
+                                                <a href="http://wptest/framework/bootstrap/">Bootstrap</a> (1)
+                                            </li>
+                                        </ul>
+                                    </li>                                     
+                                </ul>
+                            </div>
+                            <div class="col-md-3"> 
+                                <ul class="taxonomy-list">
+                                    <li class="workingwith">Working with:
+                                        <ul>
+                                            <li class="cat-item-none">No categories</li>
+                                        </ul>
+                                    </li>                                     
+                                </ul>
+                            </div>
+                        </div>                         
+                    </div>                     
+                    <div class="modal-footer"> 
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                         
+                    </div>                     
+                </div>                 
+            </div>             
         </div>
         <!-- Bootstrap core JavaScript
     ================================================== -->
