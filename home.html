@@ -270,7 +270,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-pg-collapsed>
                             <div class="home-box" wp-loop="home_editing" wp-loop-category="in:" wp-loop-category-name="editing" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand">
                                 <h3 class="">Editing</h3>
                                 <ul class="list-unstyled icons"> 
@@ -357,8 +357,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-pg-collapsed>
+                    <div class="row">
                         <div class="col-md-6">
+                            <div class="home-box" wp-loop="home_bootstrap" wp-loop-category="in:" wp-loop-category-name="bootstrap" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand">
+                                <h3>Bootstrap</h3>
+                                <ul class="list-unstyled icons" style="display: block;"> 
+                                    <li wp-loop-item="">
+                                        <i class="fa fa-file-text icn-posts"></i>
+                                        <a href="#" wp-the-title="" wp-the-permalink-href="" wp-the-permalink-href-set="href">Lorem ipsum dolor sit amet</a>
+                                    </li>
+                                </ul>
+                                <php>
+                                // Get the ID of a given category
+                                  $category_id = get_cat_ID( 'Bootstrap' );
+                                
+                                // Get the URL of this category
+                                $category_link = get_category_link( $category_id );
+                                </php>
+                                <a href="<?php echo esc_url( $category_link ); ?>"><p>≫ See all <span><php>
+                                            echo $home_bootstrap->found_posts;
+                                            </php></span> articles</p></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-pg-collapsed>
                             <div class="home-box" wp-loop="home_bugs" wp-loop-category="in:" wp-loop-category-name="bugs" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand">
                                 <h3>Troubleshooting</h3>
                                 <ul class="list-unstyled icons" style="display: block;"> 
