@@ -383,6 +383,12 @@ div.home-box > a
     background-color: #f9f9f9;
 }
 
+#search-box > a
+{
+    display: inline-block;
+    margin-top: 10px;
+}
+
 .search-submit
 {
     height: 45px;
@@ -435,5 +441,16 @@ div.home-box > a
 #sidebar .current-menu-item
 {
     font-weight: bold !important;
+}
+
+.miskolin
+{
+}
+
+.spacer
+{
+    border-bottom: 1px #E7E7E7 dotted;
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
 

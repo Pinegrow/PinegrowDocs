@@ -247,30 +247,27 @@
                             </ul>
                         </div>
                     </li>                     
-
                     <button type="button" class="btn btn-default btn-block" data-target="#topicsModal" data-toggle="modal">
                         Show topics    
 </button>
                 </div>
                 <div class="col-md-offset-2 content col-md-10 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-4 content-index">
-                    <div class="row" wp-template-part="" wp-template-part-slug="search-box" wp-include-template-part="" wp-include-template-part-slug="search-box">
-                        <div class="col-md-12" data-pg-collapsed>
-                            <h2>How can we help you today?</h2>
-                        </div>
-                        <div class="col-md-12" data-pg-collapsed>
-                            <div>
-                                <form role="search" method="get" class="search-form" action="http://docbeta.pinegrow.com:8888/" wp-get-search-form="">
-                                    <label>
-                                        <span class="screen-reader-text">Search for:</span>
-                                        <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:">
-                                    </label>
-                                    <input type="submit" class="search-submit" value="Search">
-                                </form>
-                            </div>                             
+                    <div class="row" wp-include-template-part="" wp-include-template-part-slug="search-box" data-pg-collapsed>
+                        <div class="col-md-12 search-box">
+                            <div class="" id="search-box">
+                                <h2>How can we help you today?</h2>
+                                <form role="search" method="get" id="searchform" action="http://docbeta.pinegrow.com:8888/">
+                                    <input class="search-field" type="search" placeholder="Enter your search term here..." value="" name="s" id="s" />
+                                    <input class="search-submit" type="submit" id="searchsubmit" value="Search" />
+                                </form>                                 
+
+                                <a href="http://" data-target="#topicsModal" data-toggle="modal" class="search-box-link">
+                Show all the topics            </a>
+                            </div>
                         </div>
                     </div>
-                    <h2>Search results for "<span wp-the-search-query="">STRING</span>"</h2>
-                    <article class="vsi active miskolin" wp-loop="" wp-loop-first-classes="miskolin mmmmmm" wp-the-id="" wp-loop-empty-text="No results found">
+                    <h2 data-pg-collapsed>Search results for "<span wp-the-search-query="">STRING</span>"</h2>
+                    <article class="vsi active miskolin spacer" wp-loop="" wp-loop-first-classes="miskolin mmmmmm" wp-the-id="" wp-loop-empty-text="No results found">
                         <h3 class="entry-title"><a href="#" wp-href="post_permalink" wp-the-title="">Another great post</a></h3>
                         <p wp-the-excerpt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt imperdiet sem, at semper dui blandit et. Mauris pretium mattis nunc non ornare.</p>
                         <img width="800" height="510" src="http://dummyimage.com/800X510/dedede/fff.jpg" class="attachment-post-thumbnail wp-post-image" alt="dummy_picture" wp-the-post-thumbnail="">
@@ -292,6 +289,7 @@
                             </div>
                         </div>
                     </article>
+                    <div class="row pg-empty-placeholder" wp-include-template-part wp-include-template-part-slug="pagination"></div>
                 </div>
                 <div class="col-md-offset-0 col-md-2 hidden-print col-lg-2 col-lg-offset-0 hidden-xs hidden-sm hidden-md">
 </div>
