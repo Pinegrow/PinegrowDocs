@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" wp-site wp-site-theme-name="PinegrowDocs" wp-site-theme-slug="pinegrow_docs" wp-site-themes-folder="/Users/Matjaz/Dropbox/Development/DVWeb/DV/Pinegrow/lab/pgwordpress/wp-content/themes/PinegrowDocs" wp-site-preview-url="http://docbeta.pinegrow.com:8888/building-the-layout/" wp-site-master-page="index.html">
+<html lang="en" wp-site wp-site-theme-name="PinegrowDocs" wp-site-theme-slug="pinegrow_docs" wp-site-themes-folder="/Users/earnoud/sites/dev/docbeta.pinegrow.com/wp-content/themes/docsbeta" wp-site-preview-url="http://docbeta.pinegrow.com:8888/category/editing/" wp-site-master-page="index.html">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,12 +62,12 @@
         </nav>
         <div class="container">
             <div class="row" wp-site-content>
-                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar wp-get-sidebar-set="content" data-pg-collapsed>
+                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar data-pg-collapsed>
                     <li id="nav_menu-5" class="widget widget_nav_menu"> 
                         <h3 class="widgettitle">Editing</h3> 
                         <div class="menu-editing-container"> 
                             <ul id="menu-editing" class="menu"> 
-                                <li id="menu-item-719" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-719"> 
+                                <li id="menu-item-719" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-719"> 
                                     <a href="http://docbeta.pinegrow.com:8888/building-the-layout/">Layout</a>
                                 </li>
                                 <li id="menu-item-752" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-752"> 
@@ -82,7 +82,7 @@
                                 <li id="menu-item-755" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-755"> 
                                     <a href="http://docbeta.pinegrow.com:8888/using-javascript/">Javascript</a>
                                 </li>
-                                <li id="menu-item-756" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-756"> 
+                                <li id="menu-item-756" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-756"> 
                                     <a href="http://docbeta.pinegrow.com:8888/category/editing/">Tutorials</a>
                                 </li>
                             </ul>
@@ -251,22 +251,14 @@
                         Show topics    
 </button>
                 </div>
-                <div class="col-md-offset-2 content col-md-10 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-4">
-                    <article wp-loop="">
-                        <h1 class="entry-title" wp-the-title="" wp-the-title-set="content">Another great post</h1>
-                        <div wp-the-excerpt="" wp-the-excerpt-set="content" class="lead" wp-if-has-excerpt="">
-                            <p>With Pinegrow’s powerful tools for adding, editing, cloning and removing HTML elements you can quickly build the layout of your webpage.</p>
-                        </div>
-                        <hr>
-                        <p wp-the-content="">Tole so pa lepe palme, ki jih gledam vsak dan.</p>
-                        <p wp-preview="wp-the-content"><span id="more-4"></span></p>
-                        <a class="mwm-aal-item" name="tole-so-pa-naslednje-strani" wp-preview="wp-the-content"></a>
-                        <h2 wp-preview="wp-the-content">Tole so pa naslednje strani.</h2>
-                        <h3 wp-preview="wp-the-content">Tole so pa naslednje strani.</h3>
-                        <h2 wp-preview="wp-the-content">Tole so pa naslednje strani.</h2>
-                        <a class="mwm-aal-item" name="many-titles" wp-preview="wp-the-content"></a>
-                        <h2 wp-preview="wp-the-content"></h2>
-                        <div class="post-meta" wp-template-part="" wp-template-part-slug="post-meta" wp-include-template-part="" wp-include-template-part-slug="post-meta" data-pg-collapsed="">
+                <div class="col-md-offset-2 content col-md-10 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-4 content-index">
+                    <h2>Latest WordPress</h2>
+                    <p>ParagraphLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                    <article class="vsi active miskolin spacer" wp-loop="" wp-loop-first-classes="miskolin mmmmmm" wp-the-id="">
+                        <h3 class="entry-title"><a href="#" wp-href="post_permalink" wp-the-title="">Another great post</a></h3>
+                        <p wp-the-excerpt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt imperdiet sem, at semper dui blandit et. Mauris pretium mattis nunc non ornare.</p>
+                        <img width="800" height="510" src="http://dummyimage.com/800X510/dedede/fff.jpg" class="attachment-post-thumbnail wp-post-image" alt="dummy_picture" wp-the-post-thumbnail="">
+                        <div class="post-meta" wp-include-template-part="" wp-include-template-part-slug="post-meta" data-pg-collapsed="" wp-no-export>
                             <p wp-the-tags="">Tags: <a href="#" rel="tag">tag1</a>, <a href="#" rel="tag">tag2</a>, <a href="#" rel="tag">tag3</a></p>
                             <div>
                                 Categories: 
@@ -284,26 +276,35 @@
                             </div>
                         </div>
                     </article>
-                </div>
-                <div class="col-md-offset-0 col-md-2 hidden-print col-lg-2 col-lg-offset-0 hidden-xs hidden-sm hidden-md" data-pg-collapsed>
-                    <div class="topics" wp-call-function="global $mwm_aal; echo $mwm_aal->output_content_links();" wp-call-function-set="content">
-                        <div class="mwm-aal-container"> 
-                            <a class='mwm-aal-item' name='Content-bal-title'></a> 
-                            <div class='mwm-aal-title'>Content of this page</div>                             
-                            <ul> 
-                                <li> 
-                                    <a href="#tole-so-pa-naslednje-strani">Tole so pa naslednje strani.</a>
-                                </li>                                 
-                                <li> 
-                                    <a href="#tole-so-pa-naslednje-strani">Tole so pa naslednje strani.</a>
-                                </li>                                 
-                                <li> 
-                                    <a href="#many-titles">Many titles</a>
-                                </li>
-                            </ul>
-                        </div>                         
+                    <div class="row" wp-include-template-part="" wp-include-template-part-slug="pagination">
+                        <div class="col-md-12">
+                            <nav class="post-nav pagination" wp-bs-post-pagination="" wp-bs-pagination-first="First Page" wp-bs-pagination-last="Last Page" style="display: block;"> 
+                                <ul class="pagination"> 
+                                    <li class="previous disabled"> 
+                                        <a href="http://docbeta.pinegrow.com:8888/category/editing/" aria-label="First">First Page</a>
+                                    </li>                                     
+                                    <li class="disabled"> 
+                                        <a href="http://docbeta.pinegrow.com:8888/category/editing/" title="previous" aria-label="previous"> <i class="glyphicon glyphicon-chevron-left"></i></a>
+                                    </li>                                     
+                                    <li class="active"> 
+                                        <a class="active" href="http://docbeta.pinegrow.com:8888/category/editing/">1</a>
+                                    </li>                                     
+                                    <li> 
+                                        <a href="http://docbeta.pinegrow.com:8888/category/editing/page/2/">2</a>
+                                    </li>                                     
+                                    <li> 
+                                        <a href="http://docbeta.pinegrow.com:8888/category/editing/page/2/" title="next" aria-label="next"> <i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    </li>                                     
+                                    <li class="next"> 
+                                        <a href="http://docbeta.pinegrow.com:8888/category/editing/page/2/" aria-label="Last">Last Page</a>
+                                    </li>
+                                </ul>
+                            </nav>                             
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-offset-0 col-md-2 hidden-print col-lg-2 col-lg-offset-0 hidden-xs hidden-sm hidden-md">
+</div>
             </div>
         </div>
         <div class="modal fade pg-show-modal" id="topicsModal" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed> 
