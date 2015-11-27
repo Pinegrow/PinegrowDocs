@@ -350,3 +350,15 @@ div.home-box > a {
 .dwqa-list-question .filter li {
   font-size: 100%;
 }
+.btn-support {
+  border: none !important;
+  color: white !important;
+  border-radius: 0px !important;
+  text-transform: uppercase;
+  background: #1999CE !important;
+  height: 45px !important;
+  padding: 0px 30px !important;
+}
+.btn-support:hover {
+  background: #23527c !important;
+}
