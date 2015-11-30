@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Learn how to build Bootstrap, Foundation or plain HTML webpages quickly with Pinegrow Web Editor">
         <meta name="author" content="Pinegrow Web Editor">
         <title>Pinegrow Web Editor</title>
         <!-- Bootstrap core CSS -->
@@ -62,7 +61,7 @@
         </nav>
         <div class="container">
             <div class="row" wp-site-content>
-                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar wp-template-part wp-template-part-slug="sidebar" id="sidebar">
+                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar wp-template-part wp-template-part-slug="sidebar" id="sidebar" data-pg-collapsed>
                     <button type="button" class="btn btn-default btn-block" data-target="#topicsModal" data-toggle="modal">Show topics</button>
                     <li id="nav_menu-5" class="widget widget_nav_menu" wp-register-sidebar="Sidebar" wp-register-sidebar-id="docs-sidebar" wp-dynamic-sidebar="docs-sidebar" wp-dynamic-sidebar-set="element" data-pg-collapsed>
                         <h3 class="widgettitle">Editing</h3>
@@ -170,7 +169,7 @@
                     <button type="button" class="btn btn-default btn-block" data-target="#topicsModal" data-toggle="modal">Show topics</button>
                 </div>
                 <div class="col-md-offset-2 content col-md-10 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-4 content-index">
-                    <div class="row" wp-template-part="" wp-template-part-slug="topics-list" wp-include-template-part="" wp-include-template-part-slug="topics-list">
+                    <div class="row" wp-template-part="" wp-template-part-slug="topics-list" wp-include-template-part="" wp-include-template-part-slug="topics-list" data-pg-collapsed wp-no-export>
                         <div class="col-md-12">
                             <h2>Topics</h2> 
                         </div>

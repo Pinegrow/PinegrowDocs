@@ -111,8 +111,8 @@ function pinegrow_docs_init() {
         /* Pinegrow generated Customizer Controls Begin */
 
     $wp_customize->add_section( 'home_custo', array(
-        'title' => __( 'Homepage' ),
-        'description' => __( 'Homepage Settings' )
+        'title' => __( 'Homepage', 'pinegrow_docs' ),
+        'description' => __( 'Homepage Settings', 'pinegrow_docs' )
     ));
 
     $wp_customize->add_setting( 'home_intro', array(
@@ -121,7 +121,7 @@ function pinegrow_docs_init() {
     ));
 
     $wp_customize->add_control( 'home_intro', array(
-        'label' => __( 'Home Intro Text' ),
+        'label' => __( 'Home Intro Text', 'pinegrow_docs' ),
         'type' => 'textarea',
         'section' => 'home_custo'
     ));
@@ -135,7 +135,7 @@ endif;
     /* Pinegrow generated Register Sidebars Begin */
 
     register_sidebar( array(
-        'name' => __( 'Sidebar' ),
+        'name' => __( 'Sidebar', 'pinegrow_docs' ),
         'id' => 'docs-sidebar',
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget' => '</li>',
@@ -210,6 +210,27 @@ require_once "inc/bootstrap/wp_bootstrap_pagination.php";
 add_filter( 'get_search_form', 'html5_search_form' );
 
 /* Emmanuel ARNOUD Resources Begin */
+
+add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
+ 
+function my_custom_dashboard_widgets() {
+global $wp_meta_boxes;
+
+wp_add_dashboard_widget('custom_help_widget', 'Pinegrow Documentation', 'custom_dashboard_help');
+}
+
+function custom_dashboard_help() {
+echo '<p>Welcome to Custom Blog Theme! Need help? Contact the developer <a href="mailto:yourusername@gmail.com">here</a>. For WordPress Tutorials visit: <a href="http://www.wpbeginner.com" target="_blank">WPBeginner</a></p>';
+}
+
+
+add_action('after_setup_theme', 'remove_admin_bar');
+
+function remove_admin_bar() {
+if (!current_user_can('administrator') && !is_admin()) {
+  show_admin_bar(false);
+}
+}
 
 /* Set Theme Content Width http://codex.wordpress.org/Content_Width */
     if ( ! isset( $content_width ) )
