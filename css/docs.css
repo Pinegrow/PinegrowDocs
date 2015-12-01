@@ -377,3 +377,25 @@ div.home-box > a {
 .topsearch-box {
   margin-bottom: 35px;
 }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #FFF;
+  background-color: #0097CB;
+}
+.post-categories a {
+  text-decoration: none;
+}
+.post-categories li {
+  display: inline;
+  margin-right: 5px;
+  text-transform: capitalize;
+}
+.post-categories li:after {
+  content: "";
+}
+.post-categories li:before {
+  font-family: FontAwesome;
+  content: "\f07c    ";
+  color: #3A86B8;
+}
