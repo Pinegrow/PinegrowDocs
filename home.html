@@ -60,9 +60,9 @@
                 </div>                 
             </div>             
         </nav>
-        <div class="container" data-pg-collapsed>
+        <div class="container">
             <div class="row" wp-site-content>
-                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar data-pg-collapsed>
+                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar>
                     <li id="nav_menu-5" class="widget widget_nav_menu"> 
                         <h3 class="widgettitle">Editing</h3> 
                         <div class="menu-editing-container"> 
@@ -265,7 +265,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" data-pg-collapsed>
                             <p class="" wp-cz-control="home_intro" wp-cz-control-label="Home Intro Text" wp-cz-control-type="textarea" wp-cz-control-section="home_custo" wp-cz-theme-mod="home_intro">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet.</p>
                         </div>
                     </div>
@@ -357,7 +357,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-pg-collapsed>
                         <div class="col-md-6">
                             <div class="home-box" wp-loop="home_bootstrap" wp-loop-category="in:" wp-loop-category-name="bootstrap" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand">
                                 <h3>Bootstrap</h3>
@@ -398,6 +398,47 @@
                                 <a href="<?php echo esc_url( $category_link ); ?>"><p>≫ See all <span><php>
                                             echo $home_bugs->found_posts;
                                             </php></span> articles</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="" wp-register-sidebar="Home QA" wp-register-sidebar-id="pgdocs_home" wp-register-sidebar-before="<div id=&quot;%1$s&quot; class=&quot;widget %2$s&quot;>" wp-register-sidebar-after="</div>" wp-dynamic-sidebar="pgdocs_home" wp-register-sidebar-before-title="<h3 class=&quot;questions-title&quot;>">
+                                <div id="sabai_platform_wordpress_sabai_questions_recent-2" class="widget widget_sabai_platform_wordpress_sabai_questions_recent">
+                                    <h3 class="questions-title">Recent Questions &amp; Answers</h3>
+                                    <div class="sabai sabai-wordpress-widget sabai-widget-questions-recent sabai-clearfix">
+                                        <ul class="sabai-wordpress-widget-entries">
+                                            <li class="sabai-wordpress-widget-entry-with-image">
+                                                <div class="sabai-wordpress-widget-image">
+                                                    <img src="http://0.gravatar.com/avatar/0b9e6b2fe37a6c6b8ceb8e5790fa6e05?s=24&#038;d=identicon&#038;r=g" width="24" height="24" style="width:24px; height:24px;" alt="pinegrow" title="pinegrow" />
+                                                </div>
+                                                <div class="sabai-wordpress-widget-main">
+                                                    <a title="Test Bootstrap" href="http://docbeta.pinegrow.com:8888/questions-answers/question/test-bootstrap">Test Bootstrap</a>
+                                                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo...</p>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fa fa-clock-o"></i> asked 3 days ago
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="sabai-wordpress-widget-entry-with-image">
+                                                <div class="sabai-wordpress-widget-image">
+                                                    <img src="http://0.gravatar.com/avatar/0b9e6b2fe37a6c6b8ceb8e5790fa6e05?s=24&#038;d=identicon&#038;r=g" width="24" height="24" style="width:24px; height:24px;" alt="pinegrow" title="pinegrow" />
+                                                </div>
+                                                <div class="sabai-wordpress-widget-main">
+                                                    <a title="Can I create a Carousel with Foundation 6?" href="http://docbeta.pinegrow.com:8888/questions-answers/answers/14">Can I create a Carousel with Foundation 6?</a>
+                                                    <p>Anoter one.</p>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fa fa-clock-o"></i> answered 3 days ago
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>                                 
                             </div>
                         </div>
                     </div>
