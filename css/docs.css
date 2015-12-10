@@ -260,12 +260,8 @@ div.home-box > a {
 }
 @media (max-width: 991px) {
   .search-field {
-    width: 330px;
-  }
-}
-@media (max-width: 510px) {
-  .search-field {
-    width: 190px;
+    width: 100%;
+    display: block;
   }
 }
 @media (max-width: 767px) {
@@ -407,4 +403,14 @@ div.home-box > a {
   text-transform: uppercase;
   font-size: 20px;
   line-height: 30.625px;
+}
+.search-box-single {
+  margin-bottom: 40px;
+}
+@media (max-width: 991px) {
+  .search-submit {
+    display: block;
+    margin-top: 12px;
+    width: 100%;
+  }
 }
