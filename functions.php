@@ -1,7 +1,5 @@
 <?php
 
-include_once get_template_directory().'/buddypress/bp-custom.php';
-
 if ( ! function_exists( 'pinegrow_docs_setup' ) ) :
 
 function pinegrow_docs_setup() {
@@ -19,7 +17,7 @@ function pinegrow_docs_setup() {
      * Let WordPress manage the document title.
      */
     add_theme_support( 'title-tag' );
-    
+
     /*
      * Enable support for Post Thumbnails on posts and pages.
      */
@@ -58,7 +56,7 @@ if ( ! function_exists( 'pinegrow_docs_init' ) ) :
 
 function pinegrow_docs_init() {
 
-    
+
     // Use categories with attachments
     register_taxonomy_for_object_type( 'category', 'attachment' );
 
@@ -104,7 +102,7 @@ function pinegrow_docs_init() {
     /* Pinegrow generated Custom Post Types Begin */
 
     /* Pinegrow generated Custom Post Types End */
-    
+
     if ( ! function_exists( 'mytheme_customize_register' ) ) :
     function mytheme_customize_register( $wp_customize ) {
 
@@ -133,6 +131,15 @@ function pinegrow_docs_init() {
 endif;
 
     /* Pinegrow generated Register Sidebars Begin */
+
+    register_sidebar( array(
+        'name' => __( 'Home QA', 'pinegrow_docs' ),
+        'id' => 'pgdocs_home',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="questions-title">',
+        'after_title' => '</h3>'
+    ) );
 
     register_sidebar( array(
         'name' => __( 'Sidebar', 'pinegrow_docs' ),
@@ -170,7 +177,7 @@ if ( ! function_exists( 'pinegrow_docs_enqueue_scripts' ) ) :
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.css', false, null, 'all');
 
     wp_deregister_style( 'docs' );
-    wp_enqueue_style( 'docs', get_template_directory_uri() . '/css/docs.css', false, null, 'all');
+    wp_enqueue_style( 'docs', get_template_directory_uri() . '/css/docs.css?version=3.4', false, null, 'all');
 
     wp_deregister_style( 'style-1' );
     wp_enqueue_style( 'style-1', 'http://fonts.googleapis.com/css?family=Lato:300,400,900', false, null, 'all');
@@ -192,37 +199,29 @@ require_once "inc/bootstrap/wp_bootstrap_navwalker.php";
 require_once "inc/bootstrap/wp_bootstrap_pagination.php";
 
     /* Pinegrow generated Include Resources End */
-    
-/**
- * Replacing the default WordPress search form with an HTML5 version
- *
- */
- /* HTML5 SEARCH FORM http://bavotasan.com/2011/html5-search-form-in-wordpress/*/
- 
- function html5_search_form( $form ) {
-    $form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-    <input class="search-field" type="search" placeholder="'.__("Enter your search term here...").'" value="' . get_search_query() . '" name="s" id="s" />
-    <input class="search-submit" type="submit" id="searchsubmit" value="Search" />
-    </form>';
-
-    return $form;
-}
-add_filter( 'get_search_form', 'html5_search_form' );
 
 /* Emmanuel ARNOUD Resources Begin */
 
-add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
- 
-function my_custom_dashboard_widgets() {
-global $wp_meta_boxes;
+// Replacing the default WordPress search form with an HTML5 version
+// http://bavotasan.com/2011/html5-search-form-in-wordpress/*/
 
-wp_add_dashboard_widget('custom_help_widget', 'Pinegrow Documentation', 'custom_dashboard_help');
+function html5_search_form( $form ) {
+   $form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
+   <input class="search-field" type="search" placeholder="'.__("Enter your search term here...").'" value="' . get_search_query() . '" name="s" id="s" />
+   <input class="search-submit" type="submit" id="searchsubmit" value="Search" />
+   </form>';
+
+   return $form;
+}
+add_filter( 'get_search_form', 'html5_search_form' );
+
+// Disable Lost/Changed Password Emails
+
+if ( !function_exists( 'wp_password_change_notification' ) ) {
+    function wp_password_change_notification() {}
 }
 
-function custom_dashboard_help() {
-echo '<p>Welcome to Custom Blog Theme! Need help? Contact the developer <a href="mailto:yourusername@gmail.com">here</a>. For WordPress Tutorials visit: <a href="http://www.wpbeginner.com" target="_blank">WPBeginner</a></p>';
-}
-
+// Remove Admin bar
 
 add_action('after_setup_theme', 'remove_admin_bar');
 
@@ -241,13 +240,10 @@ if (!current_user_can('administrator') && !is_admin()) {
     add_filter('widget_text', 'do_shortcode', 11);
 }
 
-/* BuddyPress Integration for DWQ */
-   add_action( 'template_redirect', 'pinegrow_docs_redirect_author_archive_to_profile' );
-function pinegrow_docs_redirect_author_archive_to_profile() {
-if(is_author()){
-$user_id = get_query_var( 'author' );
-wp_redirect( bp_core_get_user_domain( $user_id ) );
-}
+/* Remove SABAI PLUGIN FONT AWESOME VERSION */
+add_action('wp_print_styles', 'my_sabai_dequeue_font_awesome', 100);
+function my_sabai_dequeue_font_awesome()  {
+wp_dequeue_style('sabai-font-awesome');
 }
 
 /* Emmanuel ARNOUD Resources End */
