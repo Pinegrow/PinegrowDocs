@@ -414,3 +414,6 @@ div.home-box > a {
     width: 100%;
   }
 }
+#topics ol {
+  padding-left: 0px;
+}
