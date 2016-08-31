@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Learn how to build Bootstrap, Foundation or plain HTML webpages quickly with Pinegrow Web Editor">
         <meta name="author" content="Pinegrow Web Editor">
         <title>Pinegrow Web Editor</title>
         <!-- Bootstrap core CSS -->
@@ -17,10 +16,10 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     </head>
-    <body>
-        <nav class="navbar navbar-default navbar-fixed-top hidden-print" role="navigation" data-pg-collapsed> 
+    <body wp-body-class>
+        <nav class="navbar navbar-default navbar-fixed-top hidden-print" role="navigation"> 
             <div class="container-fluid"> 
                 <div class="navbar-header"> 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#crsa_id_7"> 
@@ -62,7 +61,7 @@
         </nav>
         <div class="container">
             <div class="row" wp-site-content>
-                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar wp-get-sidebar-set="content" data-pg-collapsed>
+                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar wp-get-sidebar-set="content">
                     <li id="nav_menu-5" class="widget widget_nav_menu"> 
                         <h3 class="widgettitle">Editing</h3> 
                         <div class="menu-editing-container"> 
@@ -258,7 +257,7 @@
                             <input type="submit" id="searchsubmit" value="Search" class="search-submit" />
                         </form>
                     </div>
-                    <div class="" wp-include-template-part wp-include-template-part-slug="breadcrumbs" data-pg-collapsed>
+                    <div class="" wp-include-template-part wp-include-template-part-slug="breadcrumbs">
                         <div class="">
                             <p id="breadcrumbs"><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="http://docbeta.pinegrow.com:8888" rel="v:url" property="v:title">Home</a> &gt; <span rel="v:child" typeof="v:Breadcrumb"><a href="http://docbeta.pinegrow.com:8888/editing/" rel="v:url" property="v:title">Editing</a> &gt; <span rel="v:child" typeof="v:Breadcrumb"><a href="http://docbeta.pinegrow.com:8888/editing/editing-layout/" rel="v:url" property="v:title">Layout</a> &gt; <span class="breadcrumb_last">Building the layout</span></span></span></span></span></p> 
                         </div>
@@ -266,8 +265,8 @@
                     </div>
                     <article wp-loop="">
                         <h1 class="entry-title" wp-the-title="" wp-the-title-set="content">Another great post</h1>
-                        <span data-pg-collapsed data-pg-name="Edit"><a href="http://" wp-edit-post-link=" &#40;Edit&#41;"> (Edit)</a></span>
-                        <div wp-the-excerpt="" wp-the-excerpt-set="content" class="lead" wp-if-has-excerpt="" data-pg-collapsed>
+                        <span data-pg-name="Edit"><a href="http://" wp-edit-post-link=" &#40;Edit&#41;"> (Edit)</a></span>
+                        <div wp-the-excerpt="" wp-the-excerpt-set="content" class="lead" wp-if-has-excerpt="">
                             <p>With Pinegrow’s powerful tools for adding, editing, cloning and removing HTML elements you can quickly build the layout of your webpage.</p>
                         </div>
                         <hr>
@@ -298,7 +297,7 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-md-offset-0 col-md-2 hidden-print col-lg-2 col-lg-offset-0 hidden-xs hidden-sm hidden-md" data-pg-collapsed>
+                <div class="col-md-offset-0 col-md-2 hidden-print col-lg-2 col-lg-offset-0 hidden-xs hidden-sm hidden-md">
                     <div class="topics" wp-call-function="global $mwm_aal; echo $mwm_aal->output_content_links();" wp-call-function-set="content" id="topics">
                         <div class="mwm-aal-container"> 
                             <a class='mwm-aal-item' name='Content-bal-title'></a> 
@@ -319,7 +318,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade pg-show-modal" id="topicsModal" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed> 
+        <div class="modal fade pg-show-modal" id="topicsModal" tabindex="-1" role="dialog" aria-hidden="true"> 
             <div class="modal-dialog"> 
                 <div class="modal-content"> 
                     <div class="modal-header"> 
@@ -377,5 +376,19 @@
             ga('send', 'pageview');
 
         </script>
+        <!-- Drip -->
+        <script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {}; 
+  _dcs.account = '6332858';
+  
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true; 
+    dc.src = '//tag.getdrip.com/6332858.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
     </body>
 </html>

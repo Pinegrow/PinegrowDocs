@@ -418,8 +418,15 @@ div.home-box > a {
   padding-left: 0px;
   margin-top: 6px;
 }
+/* 19/04/2016 CSS Patch 001 */
 .mwm-aal-title {
   font-size: 16px;
   font-weight: 600;
   padding-bottom: 5px;
+}
+/* 15/08/2016 CSS Patch 002 */
+a.mwm-aal-item {
+  position: absolute;
+  margin-top: -50px;
+  padding-top: 50px;
 }

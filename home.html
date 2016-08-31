@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Learn how to build Bootstrap, Foundation or plain HTML webpages quickly with Pinegrow Web Editor">
         <meta name="author" content="Pinegrow Web Editor">
         <title>Pinegrow Web Editor</title>
         <!-- Bootstrap core CSS -->
@@ -17,10 +16,10 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     </head>
-    <body wp-cz-section="home_custo" wp-cz-section-title="Homepage" wp-cz-section-description="Homepage Settings">
-        <nav class="navbar navbar-default navbar-fixed-top hidden-print" role="navigation" data-pg-collapsed> 
+    <body wp-body-class>
+        <nav class="navbar navbar-default navbar-fixed-top hidden-print" role="navigation"> 
             <div class="container-fluid"> 
                 <div class="navbar-header"> 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#crsa_id_7"> 
@@ -60,7 +59,7 @@
                 </div>                 
             </div>             
         </nav>
-        <div class="container" data-pg-collapsed>
+        <div class="container">
             <div class="row" wp-site-content>
                 <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar>
                     <li id="nav_menu-5" class="widget widget_nav_menu"> 
@@ -265,16 +264,16 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12" data-pg-collapsed>
+                        <div class="col-md-12">
                             <p wp-cz-control="home_intro" wp-cz-control-label="Home Intro Text" wp-cz-control-type="textarea" wp-cz-control-section="home_custo" wp-cz-theme-mod="home_intro">Pinegrow is a desktop app that lets you build responsive websites faster with live multi-page editing, CSS styling and smart components for Bootstrap, Foundation, AngularJS and WordPress.</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6" data-pg-collapsed>
+                        <div class="col-md-6">
                             <div class="home-box" wp-loop="home_editing" wp-loop-category="in:" wp-loop-category-name="editing" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand">
                                 <h3 class="">Editing</h3>
                                 <ul class="list-unstyled icons"> 
-                                    <li wp-loop-item="" data-pg-collapsed>
+                                    <li wp-loop-item="">
                                         <i class="fa fa-file-text icn-posts"></i>
                                         <a href="#" wp-the-title="" wp-the-permalink-href="" wp-the-permalink-href-set="href">Lorem ipsum dolor sit amet</a>
                                     </li>
@@ -291,7 +290,7 @@
                                             </php></span> articles</p></a>
                             </div>
                         </div>
-                        <div class="col-md-6" data-pg-collapsed>
+                        <div class="col-md-6">
                             <div class="home-box" wp-loop="home_styling" wp-loop-category="in:" wp-loop-category-name="styling" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand">
                                 <h3>Styling</h3>
                                 <ul class="list-unstyled icons" style="display: block;"> 
@@ -313,8 +312,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-pg-collapsed>
-                        <div class="col-md-6" data-pg-collapsed>
+                    <div class="row">
+                        <div class="col-md-6">
                             <div class="home-box" wp-loop="home_wordpress" wp-loop-category="in:" wp-loop-category-name="wordpress-themes" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-orderby="rand" wp-loop-show-items="5">
                                 <h3>WordPress</h3>
                                 <ul class="list-unstyled icons" style="display: block;"> 
@@ -335,7 +334,7 @@
                                             </php></span> articles</p></a>
                             </div>
                         </div>
-                        <div class="col-md-6" data-pg-collapsed>
+                        <div class="col-md-6">
                             <div class="home-box" wp-loop="home_pages" wp-loop-category="in:" wp-loop-category-name="pages" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand">
                                 <h3>Pages</h3>
                                 <ul class="list-unstyled icons" style="display: block;"> 
@@ -351,13 +350,13 @@
                                 // Get the URL of this category
                                 $category_link = get_category_link( $category_id );
                                 </php>
-                                <a href="<?php echo esc_url( $category_link ); ?>"><p data-pg-collapsed>≫ See all <span><php>
+                                <a href="<?php echo esc_url( $category_link ); ?>"><p>≫ See all <span><php>
                                             echo $home_pages->found_posts;
                                             </php></span> articles</p></a>
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-pg-collapsed>
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="home-box" wp-loop="home_bootstrap" wp-loop-category="in:" wp-loop-category-name="bootstrap" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand">
                                 <h3>Bootstrap</h3>
@@ -379,7 +378,7 @@
                                             </php></span> articles</p></a>
                             </div>
                         </div>
-                        <div class="col-md-6" data-pg-collapsed>
+                        <div class="col-md-6">
                             <div class="home-box" wp-loop="home_bugs" wp-loop-category="in:" wp-loop-category-name="bugs" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand">
                                 <h3>Troubleshooting</h3>
                                 <ul class="list-unstyled icons" style="display: block;"> 
@@ -401,7 +400,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" wp-no-export data-pg-collapsed>
+                    <div class="row" wp-no-export>
                         <div class="col-md-12">
                             <div class="" wp-register-sidebar="Home QA" wp-register-sidebar-id="pgdocs_home" wp-register-sidebar-before="<div id=&quot;%1$s&quot; class=&quot;widget %2$s&quot;>" wp-register-sidebar-after="</div>" wp-dynamic-sidebar="pgdocs_home" wp-register-sidebar-before-title="<h3 class=&quot;questions-title&quot;>" id="recents_questions">
                                 <div id="sabai_platform_wordpress_sabai_questions_recent-2" class="widget widget_sabai_platform_wordpress_sabai_questions_recent">
@@ -447,7 +446,7 @@
 </div>
             </div>
         </div>
-        <div class="modal fade pg-show-modal" id="topicsModal" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed> 
+        <div class="modal fade pg-show-modal" id="topicsModal" tabindex="-1" role="dialog" aria-hidden="true"> 
             <div class="modal-dialog"> 
                 <div class="modal-content"> 
                     <div class="modal-header"> 
@@ -505,5 +504,19 @@
             ga('send', 'pageview');
 
         </script>
+        <!-- Drip -->
+        <script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {}; 
+  _dcs.account = '6332858';
+  
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true; 
+    dc.src = '//tag.getdrip.com/6332858.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
     </body>
 </html>

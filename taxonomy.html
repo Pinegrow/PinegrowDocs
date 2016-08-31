@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Learn how to build Bootstrap, Foundation or plain HTML webpages quickly with Pinegrow Web Editor">
         <meta name="author" content="Pinegrow Web Editor">
         <title>Pinegrow Web Editor</title>
         <!-- Bootstrap core CSS -->
@@ -17,10 +16,10 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     </head>
-    <body>
-        <nav class="navbar navbar-default navbar-fixed-top hidden-print" role="navigation" data-pg-collapsed> 
+    <body wp-body-class>
+        <nav class="navbar navbar-default navbar-fixed-top hidden-print" role="navigation"> 
             <div class="container-fluid"> 
                 <div class="navbar-header"> 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#crsa_id_7"> 
@@ -62,7 +61,7 @@
         </nav>
         <div class="container">
             <div class="row" wp-site-content>
-                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar data-pg-collapsed>
+                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar>
                     <li id="nav_menu-5" class="widget widget_nav_menu"> 
                         <h3 class="widgettitle">Editing</h3> 
                         <div class="menu-editing-container"> 
@@ -257,7 +256,7 @@
                         <h3 class="entry-title"><a href="#" wp-href="post_permalink" wp-the-title="">Another great post</a></h3>
                         <p wp-the-excerpt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt imperdiet sem, at semper dui blandit et. Mauris pretium mattis nunc non ornare.</p>
                         <img width="800" height="510" src="http://dummyimage.com/800X510/dedede/fff.jpg" class="attachment-post-thumbnail wp-post-image" alt="dummy_picture" wp-the-post-thumbnail="">
-                        <div class="post-meta" wp-include-template-part="" wp-include-template-part-slug="post-meta" data-pg-collapsed="">
+                        <div class="post-meta" wp-include-template-part="" wp-include-template-part-slug="post-meta">
                             <p wp-the-tags="">Tags: <a href="#" rel="tag">tag1</a>, <a href="#" rel="tag">tag2</a>, <a href="#" rel="tag">tag3</a></p>
                             <div>
                                 Categories: 
@@ -275,7 +274,7 @@
                             </div>
                         </div>
                     </article>
-                    <div class="row" wp-include-template-part wp-include-template-part-slug="pagination" data-pg-collapsed>
+                    <div class="row" wp-include-template-part wp-include-template-part-slug="pagination">
                         <div class="col-md-12">
                             <nav class="post-nav">
                                 <ul class="pagination">
@@ -306,7 +305,7 @@
 </div>
             </div>
         </div>
-        <div class="modal fade pg-show-modal" id="topicsModal" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed> 
+        <div class="modal fade pg-show-modal" id="topicsModal" tabindex="-1" role="dialog" aria-hidden="true"> 
             <div class="modal-dialog"> 
                 <div class="modal-content"> 
                     <div class="modal-header"> 
@@ -364,5 +363,19 @@
             ga('send', 'pageview');
 
         </script>
+        <!-- Drip -->
+        <script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {}; 
+  _dcs.account = '6332858';
+  
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true; 
+    dc.src = '//tag.getdrip.com/6332858.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
     </body>
 </html>
