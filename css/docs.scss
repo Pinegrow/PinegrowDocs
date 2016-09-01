@@ -1,27 +1,22 @@
-$font-size: 16px;
-$color: #1999ce;
-$lightgray: #f5f5f5;
-
-
-//#428bca;
-
-/*
-@font-face{
-  font-family: 'centrale_sans_roundedbook';
-  src: url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.eot');
-  src: url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.woff2') format('woff2'), url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.woff') format('woff'), url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.ttf') format('truetype'), url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.svg#centrale_sans_roundedbook') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-*/
+/* Authored Dependencies */
+@import "global/colors";
+@import "global/fonts";
 
 body
 {
-    font-family: 'Lato', sans-serif;
+    font-family: $font-sans-serif;
     -webkit-font-smoothing: antialiased;
     line-height: (22/15);
     padding-top: 90px;
-    color: #3d3c3f;
+    color: $baltic-sea;
+}
+
+@media (max-width: 767px)
+{
+    body
+    {
+        padding-top: 50px;
+    }
 }
 
 h1,
@@ -55,7 +50,7 @@ a
 {
     font-size: $font-size;
     font-weight: 600;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $iron;
     margin-bottom: 10px;
     list-style-type: none;
 }
@@ -90,7 +85,7 @@ a
 
 .content
 {
-    font-size: $font-size;
+    font-size: $font-size-content;
     margin-bottom: 140px;
 }
 
@@ -129,15 +124,16 @@ a
     width: 150px;
     text-align: left;
     margin: 20px 0 20px 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $iron;
 }
 
 .content img
 {
     max-width: 100%;
     height: auto;
-    border: 12px solid #eee;
+    border: 12px solid $border;
     margin: 10px auto 10px;
+    box-sizing: content-box;
 }
 
 .content img.big
@@ -191,7 +187,7 @@ a
     margin-top: 77px;
     position: fixed;
     text-align: left;
-    border-left: 1px solid #ccc;
+    border-left: 1px solid $iron;
     padding-left: 15px;
 }
 
@@ -229,6 +225,52 @@ a
 {
     color: white;
 }
+
+.navbar-default .navbar-nav > .active > a,
+ .navbar-default .navbar-nav > .active > a:hover,
+ .navbar-default .navbar-nav > .active > a:focus
+{
+    color: white;
+    background-color: $pacific-blue;
+}
+
+// Fix for Bootstrap Fixed Navbar and WordPress Admin bar
+// http://metinsaylan.com/4542/bootstrap-fixed-navbar-fix-wordpress-admin-bar/
+
+.admin-bar .navbar-fixed-top {
+    top: 32px;
+}
+
+@media (max-width:782px) {
+  .admin-bar .navbar-fixed-top {
+      top: 46px;
+  }
+}
+
+// End of Navbar Fix
+
+.post-edit-link
+{
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    background-color: $curious-blue;
+}
+
+.post-edit-link:hover
+{
+    color: white;
+    background: $casablanca;
+    text-decoration: none;
+}
+
 
 .post-categories
 {
@@ -335,16 +377,6 @@ a
     margin: 5px;
 }
 
-.search-field
-{
-    height: 45px;
-    border: 1px #CCCCCC solid;
-    padding: 10px;
-    margin-right: 5px;
-    font-weight: lighter;
-    width: 600px;
-}
-
 .home-lnk
 {
     font-weight: bold;
@@ -363,7 +395,7 @@ a
 div.home-box > h3
 {
     font-weight: 600;
-    border-bottom: 1px dotted #E7E7E7;
+    border-bottom: 1px dotted $white-lilac;
     padding-bottom: 6px;
     margin-bottom: 18px;
     text-transform: uppercase;
@@ -380,7 +412,7 @@ div.home-box > a
 {
     margin-bottom: 25px;
     padding: 5px 15px 35px;
-    background-color: #f9f9f9;
+    background-color: $hint-of-red;
 }
 
 #search-box > a
@@ -392,7 +424,7 @@ div.home-box > a
 .search-submit
 {
     height: 45px;
-    background: #1999CE;
+    background: $curious-blue;
     color: white;
     border: none;
     padding: 0px 30px;
@@ -401,7 +433,17 @@ div.home-box > a
 
 .search-submit:hover
 {
-    background-color: #3582b3;
+    background-color: lighten($curious-blue, 5%);
+}
+
+@media (max-width: 991px)
+{
+    .search-submit
+    {
+        display: block;
+        margin-top: 12px;
+        width: 100%;
+    }
 }
 
 .icons
@@ -410,31 +452,26 @@ div.home-box > a
 
 .icn-posts
 {
-    color: #dcd9d9;
+    color: $alto;
     padding-right: 3px;
+}
+
+.search-field
+{
+    height: 45px;
+    border: 1px $iron solid;
+    padding: 10px;
+    margin-right: 5px;
+    font-weight: lighter;
+    width: 600px;
 }
 
 @media (max-width: 991px)
 {
     .search-field
     {
-        width: 330px;
-    }
-}
-
-@media (max-width: 510px)
-{
-    .search-field
-    {
-        width: 190px;
-    }
-}
-
-@media (max-width: 767px)
-{
-    body
-    {
-        padding-top: 50px;
+        width: 100%;
+        display: block;
     }
 }
 
@@ -449,7 +486,7 @@ div.home-box > a
 
 .spacer
 {
-    border-bottom: 1px #E7E7E7 dotted;
+    border-bottom: 1px $white-lilac dotted;
     padding-bottom: 30px;
     padding-top: 10px;
 }
@@ -479,15 +516,171 @@ div.home-box > a
 #post-navigation a
 {
     text-decoration: none;
-    color: #ffffff;
+    color: white;
     padding: 10px 20px;
     border: none;
     text-transform: uppercase;
-    background-color: #3B94CC;
+    background-color: $celestial-blue;
 }
 
 #post-navigation a:hover
 {
-    background: #3582b3;
+    background: lighten($celestial-blue, 5%);
 }
 
+.blue-icon
+{
+    color: $malibu;
+}
+
+.red-icon
+{
+    color: $carmine-red;
+}
+
+.avatar
+{
+    border: none !important;
+    padding: 5px;
+}
+
+.btn-support
+{
+    border: none !important;
+    color: white !important;
+    border-radius: 0px !important;
+    text-transform: uppercase;
+    background: $curious-blue !important;
+    height: 45px !important;
+    padding: 0px 30px !important;
+}
+
+.btn-support:hover
+{
+    background: darken($curious-blue, 5%) !important;
+}
+
+.breadcrumbs-hr
+{
+    width: 100% !important;
+    border-top: solid 1px $lily-white !important;
+}
+
+.pg-breadcrumbs
+{
+    margin-bottom: 30px;
+}
+
+.topsearch-box
+{
+    margin-bottom: 35px;
+}
+
+.post-categories a
+{
+    text-decoration: none;
+}
+
+.post-categories li
+{
+    display: inline;
+    margin-right: 5px;
+    text-transform: capitalize;
+}
+
+.post-categories li:after
+{
+    content: "";
+}
+
+.post-categories li:before
+{
+    font-family: FontAwesome;
+    content: "\f07c    ";
+    color: $curious-blue;
+}
+
+.questions-title
+{
+    font-weight: 600;
+    border-bottom: 1px dotted $white-lilac;
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30.625px;
+}
+
+.search-box-single
+{
+    margin-bottom: 40px;
+}
+
+#topics ol
+{
+    padding-left: 0px;
+    margin-top: 6px;
+}
+
+//  Better Anchor Links CSS
+
+.mwm-aal-title
+{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+a.mwm-aal-item
+{
+    position: absolute;
+    margin-top: -50px;
+    padding-top: 50px;
+}
+
+// WP CORE SETTINGS
+
+.alignleft
+{
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright
+{
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter
+{
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption
+{
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"]
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption .wp-caption-text
+{
+    margin: 0.8075em 0;
+}
+
+.wp-caption-text
+{
+    text-align: center;
+}

@@ -1,19 +1,8 @@
+/* ==== Variables ==== */
 @font-size: 16px;
+@font-size-content: 15px;
 @color: #1999ce;
 @lightgray: #f5f5f5;
-
-
-//#428bca;
-
-/*
-@font-face{
-  font-family: 'centrale_sans_roundedbook';
-  src: url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.eot');
-  src: url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.woff2') format('woff2'), url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.woff') format('woff'), url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.ttf') format('truetype'), url('../assets/fonts/central-sans-rounded/centralesansrndbook-webfont.svg#centrale_sans_roundedbook') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-*/
 
 body
 {
@@ -22,6 +11,14 @@ body
     line-height: (22/15);
     padding-top: 90px;
     color: #3d3c3f;
+}
+
+@media (max-width: 767px)
+{
+    body
+    {
+        padding-top: 50px;
+    }
 }
 
 h1,
@@ -90,7 +87,7 @@ a
 
 .content
 {
-    font-size: @font-size;
+    font-size: @font-size-content;
     margin-bottom: 140px;
 }
 
@@ -138,6 +135,7 @@ a
     height: auto;
     border: 12px solid #eee;
     margin: 10px auto 10px;
+    box-sizing: content-box;
 }
 
 .content img.big
@@ -229,6 +227,52 @@ a
 {
     color: white;
 }
+
+.navbar-default .navbar-nav > .active > a,
+ .navbar-default .navbar-nav > .active > a:hover,
+ .navbar-default .navbar-nav > .active > a:focus
+{
+    color: #FFF;
+    background-color: #0097CB;
+}
+
+// Fix for Bootstrap Fixed Navbar and WordPress Admin bar 
+// http://metinsaylan.com/4542/bootstrap-fixed-navbar-fix-wordpress-admin-bar/ 
+
+.admin-bar .navbar-fixed-top {
+    top: 32px;
+}
+
+@media (max-width:782px) {
+  .admin-bar .navbar-fixed-top {
+      top: 46px;
+  }
+}
+
+// End of Navbar Fix 
+
+.post-edit-link
+{
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    background-color: #337ab7;
+}
+
+.post-edit-link:hover
+{
+    color: #fff;
+    background: #f0ad4e;
+    text-decoration: none;
+}
+
 
 .post-categories
 {
@@ -335,16 +379,6 @@ a
     margin: 5px;
 }
 
-.search-field
-{
-    height: 45px;
-    border: 1px #CCCCCC solid;
-    padding: 10px;
-    margin-right: 5px;
-    font-weight: lighter;
-    width: 600px;
-}
-
 .home-lnk
 {
     font-weight: bold;
@@ -404,6 +438,16 @@ div.home-box > a
     background-color: #3582b3;
 }
 
+@media (max-width: 991px)
+{
+    .search-submit
+    {
+        display: block;
+        margin-top: 12px;
+        width: 100%;
+    }
+}
+
 .icons
 {
 }
@@ -414,20 +458,22 @@ div.home-box > a
     padding-right: 3px;
 }
 
+.search-field
+{
+    height: 45px;
+    border: 1px #CCCCCC solid;
+    padding: 10px;
+    margin-right: 5px;
+    font-weight: lighter;
+    width: 600px;
+}
+
 @media (max-width: 991px)
 {
     .search-field
     {
         width: 100%;
         display: block;
-    }
-}
-
-@media (max-width: 767px)
-{
-    body
-    {
-        padding-top: 50px;
     }
 }
 
@@ -500,65 +546,6 @@ div.home-box > a
     padding: 5px;
 }
 
-.dwqa-title
-{
-}
-
-.dwqa-single-question .dwqa-comment-author .avatar
-{
-    width: 44px;
-    top: 0px;
-    border: sold 1px #C0C0C0;
-}
-
-.dwqa-list-answers
-{
-    margin-bottom: 45px;
-}
-
-.dwqa-single-question
-{
-    padding-left: 20px;
-}
-
-#dwqa-answers
-{
-    margin-top: 60px;
-}
-
-#dwqa-answers a
-{
-    color: darken(@color, 5%);
-}
-
-#dwqa-answers > .dwqa-title
-{
-    margin-bottom: 10px !important;
-}
-
-#wpadminbar
-{
-    display: none;
-}
-
-@media (max-width: 767px)
-{
-    .dwqa-single-question
-    {
-        padding-left: 0px;
-    }
-}
-
-.dwqa-container p
-{
-    font-size: 16px;
-}
-
-.dwqa-list-question .filter li
-{
-    font-size: 100%;
-}
-
 .btn-support
 {
     border: none !important;
@@ -586,25 +573,9 @@ div.home-box > a
     margin-bottom: 30px;
 }
 
-@media (max-width: 767px)
-{
-    body
-    {
-        padding-top: 70px;
-    }
-}
-
 .topsearch-box
 {
     margin-bottom: 35px;
-}
-
-.navbar-default .navbar-nav > .active > a,
- .navbar-default .navbar-nav > .active > a:hover,
- .navbar-default .navbar-nav > .active > a:focus
-{
-    color: #FFF;
-    background-color: #0097CB;
 }
 
 .post-categories a
@@ -647,43 +618,29 @@ div.home-box > a
     margin-bottom: 40px;
 }
 
-@media (max-width: 991px)
-{
-    .search-submit
-    {
-        display: block;
-        margin-top: 12px;
-        width: 100%;
-    }
-}
-
 #topics ol
 {
     padding-left: 0px;
     margin-top: 6px;
 }
 
-/* 19/04/2016 CSS Patch 001 */
-.mwm-aal-title {
-  font-size: 16px;
-  font-weight: 600;
-  padding-bottom: 5px;
+//  Better Anchor Links CSS 
+
+.mwm-aal-title
+{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 5px;
 }
-/* 15/08/2016 CSS Patch 002 */
-a.mwm-aal-item {
+
+a.mwm-aal-item
+{
     position: absolute;
     margin-top: -50px;
     padding-top: 50px;
 }
-/* 22/08/2016 */
-.content {
-  font-size:15px;
-}
 
-.content img {
-  /* border: none !important; */
-  box-sizing: content-box;
-}
+// WP CORE SETTINGS 
 
 .alignleft
 {

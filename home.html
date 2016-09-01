@@ -19,7 +19,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     </head>
     <body wp-body-class>
-        <nav class="navbar navbar-default navbar-fixed-top hidden-print" role="navigation"> 
+        <nav class="navbar navbar-default navbar-fixed-top hidden-print" role="navigation" data-pg-collapsed> 
             <div class="container-fluid"> 
                 <div class="navbar-header"> 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#crsa_id_7"> 
@@ -61,7 +61,7 @@
         </nav>
         <div class="container">
             <div class="row" wp-site-content>
-                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar>
+                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" wp-get-sidebar data-pg-collapsed>
                     <li id="nav_menu-5" class="widget widget_nav_menu"> 
                         <h3 class="widgettitle">Editing</h3> 
                         <div class="menu-editing-container"> 
@@ -251,9 +251,9 @@
 </button>
                 </div>
                 <div class="col-md-offset-2 content col-md-10 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-4 content-index">
-                    <div class="row" wp-template-part="" wp-template-part-slug="search-box" wp-include-template-part="" wp-include-template-part-slug="search-box">
+                    <div class="row" wp-include-template-part="" wp-include-template-part-slug="templates-parts/search-box" data-pg-collapsed>
                         <div class="col-md-12 search-box">
-                            <div class="" id="search-box" data-pgc-define="search_box" data-pgc-define-name="Search Box">
+                            <div class="" id="search-box" data-pgc="search_box" data-pg-collapsed>
                                 <h2>How can we help you today?</h2>
                                 <form role="search" method="get" id="searchform" action="http://docbeta.pinegrow.com:8888/" wp-get-search-form="">
                                     <input type="search" placeholder="Enter trucbidule..." value="" name="s" id="s" class="search-field" />
@@ -263,12 +263,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-pg-collapsed>
                         <div class="col-md-12">
                             <p wp-cz-control="home_intro" wp-cz-control-label="Home Intro Text" wp-cz-control-type="textarea" wp-cz-control-section="home_custo" wp-cz-theme-mod="home_intro">Pinegrow is a desktop app that lets you build responsive websites faster with live multi-page editing, CSS styling and smart components for Bootstrap, Foundation, AngularJS and WordPress.</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-pg-collapsed>
                         <div class="col-md-6">
                             <div class="home-box" wp-loop="home_editing" wp-loop-category="in:" wp-loop-category-name="editing" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand">
                                 <h3 class="">Editing</h3>
@@ -312,7 +312,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-pg-collapsed>
                         <div class="col-md-6">
                             <div class="home-box" wp-loop="home_wordpress" wp-loop-category="in:" wp-loop-category-name="wordpress-themes" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-orderby="rand" wp-loop-show-items="5">
                                 <h3>WordPress</h3>
@@ -356,9 +356,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="home-box" wp-loop="home_bootstrap" wp-loop-category="in:" wp-loop-category-name="bootstrap" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand">
+                    <div class="row" data-pg-collapsed>
+                        <div class="col-md-6" data-pg-collapsed>
+                            <div class="home-box" wp-loop="home_bootstrap" wp-loop-category="in:" wp-loop-category-name="bootstrap" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand" data-pg-collapsed>
                                 <h3>Bootstrap</h3>
                                 <ul class="list-unstyled icons" style="display: block;"> 
                                     <li wp-loop-item="">
@@ -378,8 +378,8 @@
                                             </php></span> articles</p></a>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="home-box" wp-loop="home_bugs" wp-loop-category="in:" wp-loop-category-name="bugs" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand">
+                        <div class="col-md-6" data-pg-collapsed>
+                            <div class="home-box" wp-loop="home_bugs" wp-loop-category="in:" wp-loop-category-name="bugs" wp-loop-post-type="post" wp-loop-post-status="publish" wp-loop-posts-per-page="5" wp-loop-orderby="rand" data-pg-collapsed>
                                 <h3>Troubleshooting</h3>
                                 <ul class="list-unstyled icons" style="display: block;"> 
                                     <li wp-loop-item="">
@@ -400,49 +400,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" wp-no-export>
-                        <div class="col-md-12">
-                            <div class="" wp-register-sidebar="Home QA" wp-register-sidebar-id="pgdocs_home" wp-register-sidebar-before="<div id=&quot;%1$s&quot; class=&quot;widget %2$s&quot;>" wp-register-sidebar-after="</div>" wp-dynamic-sidebar="pgdocs_home" wp-register-sidebar-before-title="<h3 class=&quot;questions-title&quot;>" id="recents_questions">
-                                <div id="sabai_platform_wordpress_sabai_questions_recent-2" class="widget widget_sabai_platform_wordpress_sabai_questions_recent">
-                                    <h3 class="questions-title">Recent Questions &amp; Answers</h3>
-                                    <div class="sabai sabai-wordpress-widget sabai-widget-questions-recent sabai-clearfix">
-                                        <ul class="sabai-wordpress-widget-entries">
-                                            <li class="sabai-wordpress-widget-entry-with-image">
-                                                <div class="sabai-wordpress-widget-image">
-                                                    <img src="http://0.gravatar.com/avatar/0b9e6b2fe37a6c6b8ceb8e5790fa6e05?s=24&#038;d=identicon&#038;r=g" width="24" height="24" style="width:24px; height:24px;" alt="pinegrow" title="pinegrow" />
-                                                </div>
-                                                <div class="sabai-wordpress-widget-main">
-                                                    <a title="Test Bootstrap" href="http://docbeta.pinegrow.com:8888/questions-answers/question/test-bootstrap">Test Bootstrap</a>
-                                                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo...</p>
-                                                    <ul>
-                                                        <li>
-                                                            <i class="fa fa-clock-o"></i> asked 3 days ago
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="sabai-wordpress-widget-entry-with-image">
-                                                <div class="sabai-wordpress-widget-image">
-                                                    <img src="http://0.gravatar.com/avatar/0b9e6b2fe37a6c6b8ceb8e5790fa6e05?s=24&#038;d=identicon&#038;r=g" width="24" height="24" style="width:24px; height:24px;" alt="pinegrow" title="pinegrow" />
-                                                </div>
-                                                <div class="sabai-wordpress-widget-main">
-                                                    <a title="Can I create a Carousel with Foundation 6?" href="http://docbeta.pinegrow.com:8888/questions-answers/answers/14">Can I create a Carousel with Foundation 6?</a>
-                                                    <p>Anoter one.</p>
-                                                    <ul>
-                                                        <li>
-                                                            <i class="fa fa-clock-o"></i> answered 3 days ago
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>                                 
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-md-offset-0 col-md-2 hidden-print col-lg-2 col-lg-offset-0 hidden-xs hidden-sm hidden-md">
+                <div class="col-md-offset-0 col-md-2 hidden-print col-lg-2 col-lg-offset-0 hidden-xs hidden-sm hidden-md" wp-no-export data-pg-hidden>
 </div>
             </div>
         </div>
@@ -454,7 +413,7 @@
                         <h4 class="modal-title">Topics</h4> 
                     </div>                     
                     <div class="modal-body"> 
-                        <div class="row" wp-include-template-part wp-include-template-part-slug="topics-list">
+                        <div class="row" wp-include-template-part wp-include-template-part-slug="templates-parts/topics-list" data-pg-collapsed>
                             <div class="col-md-12">
                                 <h2>Topics</h2> 
                             </div>
@@ -462,7 +421,7 @@
                                 <ul class="taxonomy-list">
                                     <li class="frameworks">Frameworks:
                                         <ul> 
-                                            <li class="cat-item cat-item-10">
+                                            <li class="cat-item cat-item-10" wp-list-categories wp-list-categories-show-count="true" wp-list-categories-taxonomy="frameworks" wp-list-categories-hide-empty="false" wp-list-categories-orderby="name" wp-list-categories-title-li=" ">
                                                 <a href="http://wptest/framework/bootstrap/">Bootstrap</a> (1)
                                             </li>
                                         </ul>
@@ -471,9 +430,9 @@
                             </div>
                             <div class="col-md-3"> 
                                 <ul class="taxonomy-list">
-                                    <li class="workingwith">Working with:
+                                    <li class="workingwith">Categories:
                                         <ul>
-                                            <li class="cat-item-none">No categories</li>
+                                            <li class="cat-item-none" wp-list-categories wp-list-categories-show-count="true" wp-list-categories-title-li=" ">No categories</li>
                                         </ul>
                                     </li>                                     
                                 </ul>
@@ -489,10 +448,10 @@
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.min.js" wp-enqueue-script></script>
+        <script src="bootstrap/js/bootstrap.min.js" wp-enqueue-script></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="assets/js/ie10-viewport-bug-workaround.js" wp-enqueue-script></script>
         <script>
 
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

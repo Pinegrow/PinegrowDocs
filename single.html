@@ -19,7 +19,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     </head>
     <body wp-body-class>
-        <nav class="navbar navbar-default navbar-fixed-top hidden-print" role="navigation"> 
+        <nav class="navbar navbar-default navbar-fixed-top hidden-print" role="navigation" data-pg-collapsed> 
             <div class="container-fluid"> 
                 <div class="navbar-header"> 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#crsa_id_7"> 
@@ -251,21 +251,21 @@
 </button>
                 </div>
                 <div class="col-md-offset-2 content col-md-10 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-4">
-                    <div class="search-box-single" id="search-box">
+                    <div class="search-box-single" id="search-box" data-pg-collapsed wp-include-template-part wp-include-template-part-slug="templates-parts/search-single">
                         <form role="search" method="get" id="searchform" action="http://docbeta.pinegrow.com:8888/" wp-get-search-form="">
                             <input type="search" placeholder="Enter trucbidule..." value="" name="s" id="s" class="search-field" />
                             <input type="submit" id="searchsubmit" value="Search" class="search-submit" />
                         </form>
                     </div>
-                    <div class="" wp-include-template-part wp-include-template-part-slug="breadcrumbs">
+                    <div class="" wp-include-template-part wp-include-template-part-slug="templates-parts/breadcrumbs" data-pg-collapsed>
                         <div class="">
                             <p id="breadcrumbs"><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="http://docbeta.pinegrow.com:8888" rel="v:url" property="v:title">Home</a> &gt; <span rel="v:child" typeof="v:Breadcrumb"><a href="http://docbeta.pinegrow.com:8888/editing/" rel="v:url" property="v:title">Editing</a> &gt; <span rel="v:child" typeof="v:Breadcrumb"><a href="http://docbeta.pinegrow.com:8888/editing/editing-layout/" rel="v:url" property="v:title">Layout</a> &gt; <span class="breadcrumb_last">Building the layout</span></span></span></span></span></p> 
                         </div>
                         <hr class="" />
                     </div>
                     <article wp-loop="">
+                        <span data-pg-name="Edit" data-pg-collapsed><a href="http://" wp-edit-post-link="Edit Post"> (Edit)</a></span>
                         <h1 class="entry-title" wp-the-title="" wp-the-title-set="content">Another great post</h1>
-                        <span data-pg-name="Edit"><a href="http://" wp-edit-post-link=" &#40;Edit&#41;"> (Edit)</a></span>
                         <div wp-the-excerpt="" wp-the-excerpt-set="content" class="lead" wp-if-has-excerpt="">
                             <p>With Pinegrow’s powerful tools for adding, editing, cloning and removing HTML elements you can quickly build the layout of your webpage.</p>
                         </div>
@@ -278,9 +278,9 @@
                         <h2 wp-preview="wp-the-content">Tole so pa naslednje strani.</h2>
                         <a class="mwm-aal-item" name="many-titles" wp-preview="wp-the-content"></a>
                         <h2 wp-preview="wp-the-content"></h2>
-                        <div class="post-meta" wp-template-part="" wp-template-part-slug="post-meta" wp-include-template-part="" wp-include-template-part-slug="post-meta">
-                            <p wp-the-tags="">Tags: <a href="#" rel="tag">tag1</a>, <a href="#" rel="tag">tag2</a>, <a href="#" rel="tag">tag3</a></p>
-                            <div>
+                        <div class="post-meta" wp-include-template-part="" wp-include-template-part-slug="templates-parts/post-meta">
+                            <p wp-the-tags="" data-pg-collapsed>Tags: <a href="#" rel="tag">tag1</a>, <a href="#" rel="tag">tag2</a>, <a href="#" rel="tag">tag3</a></p>
+                            <div data-pg-collapsed>
                                 Categories: 
                                 <ul class="post-categories" wp-the-category> 
                                     <li> 
@@ -326,7 +326,7 @@
                         <h4 class="modal-title">Topics</h4> 
                     </div>                     
                     <div class="modal-body"> 
-                        <div class="row" wp-include-template-part wp-include-template-part-slug="topics-list">
+                        <div class="row" wp-include-template-part wp-include-template-part-slug="templates-parts/topics-list" data-pg-collapsed>
                             <div class="col-md-12">
                                 <h2>Topics</h2> 
                             </div>
@@ -334,7 +334,7 @@
                                 <ul class="taxonomy-list">
                                     <li class="frameworks">Frameworks:
                                         <ul> 
-                                            <li class="cat-item cat-item-10">
+                                            <li class="cat-item cat-item-10" wp-list-categories wp-list-categories-show-count="true" wp-list-categories-taxonomy="frameworks" wp-list-categories-hide-empty="false" wp-list-categories-orderby="name" wp-list-categories-title-li=" ">
                                                 <a href="http://wptest/framework/bootstrap/">Bootstrap</a> (1)
                                             </li>
                                         </ul>
@@ -343,9 +343,9 @@
                             </div>
                             <div class="col-md-3"> 
                                 <ul class="taxonomy-list">
-                                    <li class="workingwith">Working with:
+                                    <li class="workingwith">Categories:
                                         <ul>
-                                            <li class="cat-item-none">No categories</li>
+                                            <li class="cat-item-none" wp-list-categories wp-list-categories-show-count="true" wp-list-categories-title-li=" ">No categories</li>
                                         </ul>
                                     </li>                                     
                                 </ul>
@@ -361,10 +361,10 @@
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.min.js" wp-enqueue-script></script>
+        <script src="bootstrap/js/bootstrap.min.js" wp-enqueue-script></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="assets/js/ie10-viewport-bug-workaround.js" wp-enqueue-script></script>
         <script>
 
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

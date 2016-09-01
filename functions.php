@@ -221,16 +221,6 @@ if ( !function_exists( 'wp_password_change_notification' ) ) {
     function wp_password_change_notification() {}
 }
 
-// Remove Admin bar
-
-add_action('after_setup_theme', 'remove_admin_bar');
-
-function remove_admin_bar() {
-if (!current_user_can('administrator') && !is_admin()) {
-  show_admin_bar(false);
-}
-}
-
 /* Set Theme Content Width http://codex.wordpress.org/Content_Width */
     if ( ! isset( $content_width ) )
     $content_width = 848;
@@ -241,10 +231,20 @@ if (!current_user_can('administrator') && !is_admin()) {
 }
 
 /* Remove SABAI PLUGIN FONT AWESOME VERSION */
-add_action('wp_print_styles', 'my_sabai_dequeue_font_awesome', 100);
-function my_sabai_dequeue_font_awesome()  {
-wp_dequeue_style('sabai-font-awesome');
-}
+// add_action('wp_print_styles', 'my_sabai_dequeue_font_awesome', 100);
+// function my_sabai_dequeue_font_awesome()  {
+// wp_dequeue_style('sabai-font-awesome');
+// }
+
+// Remove Admin bar
+
+// add_action('after_setup_theme', 'remove_admin_bar');
+//
+// function remove_admin_bar() {
+// if (!current_user_can('administrator') && !is_admin()) {
+//   show_admin_bar(false);
+// }
+// }
 
 /* Emmanuel ARNOUD Resources End */
 ?>
