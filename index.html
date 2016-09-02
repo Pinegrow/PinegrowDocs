@@ -61,9 +61,9 @@
         </nav>
         <div class="container">
             <div class="row" wp-site-content>
-                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" id="sidebar" wp-get-sidebar>
+                <div class="col-md-2 chapters hidden-print hidden-xs sidebar" id="sidebar" wp-get-sidebar data-pg-collapsed>
                     <button type="button" class="btn btn-default btn-block" data-target="#topicsModal" data-toggle="modal">Show topics</button>
-                    <li id="nav_menu-5" class="widget widget_nav_menu" wp-dynamic-sidebar="docs-sidebar" wp-dynamic-sidebar-set="element" data-pg-collapsed>
+                    <li id="nav_menu-5" class="widget widget_nav_menu" wp-dynamic-sidebar="docs-sidebar" wp-dynamic-sidebar-set="element">
                         <h3 class="widgettitle">Editing</h3>
                         <div class="menu-editing-container">
                             <ul id="menu-editing" class="menu">
@@ -88,7 +88,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li id="nav_menu-7" class="widget widget_nav_menu" wp-preview="wp-dynamic-sidebar" data-pg-collapsed>
+                    <li id="nav_menu-7" class="widget widget_nav_menu" wp-preview="wp-dynamic-sidebar">
                         <h3 class="widgettitle">Pages</h3>
                         <div class="menu-pages-container">
                             <ul id="menu-pages" class="menu">
@@ -104,7 +104,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li id="nav_menu-9" class="widget widget_nav_menu" wp-preview="wp-dynamic-sidebar" data-pg-collapsed>
+                    <li id="nav_menu-9" class="widget widget_nav_menu" wp-preview="wp-dynamic-sidebar">
                         <h3 class="widgettitle">Troubleshooting</h3>
                         <div class="menu-troubleshooting-container">
                             <ul id="menu-troubleshooting" class="menu">
@@ -114,7 +114,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li id="nav_menu-10" class="widget widget_nav_menu" wp-preview="wp-dynamic-sidebar" data-pg-collapsed>
+                    <li id="nav_menu-10" class="widget widget_nav_menu" wp-preview="wp-dynamic-sidebar">
                         <h3 class="widgettitle">WordPress</h3>
                         <div class="menu-wordpress-container">
                             <ul id="menu-wordpress" class="menu">
@@ -133,7 +133,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li id="nav_menu-12" class="widget widget_nav_menu" wp-preview="wp-dynamic-sidebar" data-pg-collapsed>
+                    <li id="nav_menu-12" class="widget widget_nav_menu" wp-preview="wp-dynamic-sidebar">
                         <h3 class="widgettitle">Foundation</h3>
                         <div class="menu-foundation-container">
                             <ul id="menu-foundation" class="menu">
@@ -143,7 +143,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li id="nav_menu-14" class="widget widget_nav_menu" wp-preview="wp-dynamic-sidebar" data-pg-collapsed>
+                    <li id="nav_menu-14" class="widget widget_nav_menu" wp-preview="wp-dynamic-sidebar">
                         <h3 class="widgettitle">AngularJS</h3>
                         <div class="menu-foundation-container">
                             <ul id="menu-foundation-1" class="menu">
@@ -153,7 +153,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li id="nav_menu-16" class="widget widget_nav_menu" wp-preview="wp-dynamic-sidebar" data-pg-collapsed>
+                    <li id="nav_menu-16" class="widget widget_nav_menu" wp-preview="wp-dynamic-sidebar">
                         <h3 class="widgettitle">Guides &#038; templates</h3>
                         <div class="menu-guides-templates-container">
                             <ul id="menu-guides-templates" class="menu">
@@ -227,11 +227,11 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-md-offset-0 col-md-2 hidden-print col-lg-2 col-lg-offset-0 hidden-xs hidden-sm hidden-md" data-pg-hidden wp-no-export>
+                <div class="col-md-offset-0 col-md-2 hidden-print col-lg-2 col-lg-offset-0 hidden-xs hidden-sm hidden-md" wp-no-export>
 </div>
             </div>
         </div>
-        <div class="modal fade pg-show-modal" id="topicsModal" tabindex="-1" role="dialog" aria-hidden="true"> 
+        <div class="modal fade pg-show-modal" id="topicsModal" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed> 
             <div class="modal-dialog"> 
                 <div class="modal-content"> 
                     <div class="modal-header"> 
@@ -239,7 +239,7 @@
                         <h4 class="modal-title">Topics</h4> 
                     </div>                     
                     <div class="modal-body"> 
-                        <div class="row" wp-include-template-part wp-include-template-part-slug="templates-parts/topics-list" data-pg-collapsed>
+                        <div class="row" wp-include-template-part wp-include-template-part-slug="templates-parts/topics-list">
                             <div class="col-md-12">
                                 <h2>Topics</h2> 
                             </div>

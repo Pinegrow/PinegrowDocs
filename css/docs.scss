@@ -16,6 +16,7 @@ body
     body
     {
         padding-top: 50px;
+        overflow-x: hidden;
     }
 }
 
@@ -30,7 +31,7 @@ h1,
 
 a
 {
-    color: darken($color, 5%);
+    color: darken($pacific-blue, 5%);
 }
 
 .chapters
@@ -103,7 +104,7 @@ a
 {
     font-size: floor($font-size*1.25);
     font-weight: 300;
-    border-left-color: lighten($color, 15%);
+    border-left-color: lighten($pacific-blue, 15%);
 }
 
 .content h1
@@ -208,12 +209,12 @@ a
 
 .navbar li.selected
 {
-    background-color: $color;
+    background-color: $pacific-blue;
 }
 
 .navbar li.selected:hover
 {
-    background-color: darken($color, 5%);
+    background-color: darken($pacific-blue, 5%);
 }
 
 .navbar li.selected a
@@ -261,7 +262,7 @@ a
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25em;
-    background-color: $curious-blue;
+    background-color: $pacific-blue;
 }
 
 .post-edit-link:hover
@@ -415,6 +416,19 @@ div.home-box > a
     background-color: $hint-of-red;
 }
 
+.search-box-single
+{
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px)
+{
+    .search-box-single
+    {
+      padding-top: 25px;
+    }
+}
+
 #search-box > a
 {
     display: inline-block;
@@ -424,7 +438,7 @@ div.home-box > a
 .search-submit
 {
     height: 45px;
-    background: $curious-blue;
+    background: $pacific-blue;
     color: white;
     border: none;
     padding: 0px 30px;
@@ -433,7 +447,7 @@ div.home-box > a
 
 .search-submit:hover
 {
-    background-color: lighten($curious-blue, 5%);
+    background-color: darken($pacific-blue, 8%);
 }
 
 @media (max-width: 991px)
@@ -520,17 +534,17 @@ div.home-box > a
     padding: 10px 20px;
     border: none;
     text-transform: uppercase;
-    background-color: $celestial-blue;
+    background-color: $pacific-blue;
 }
 
 #post-navigation a:hover
 {
-    background: lighten($celestial-blue, 5%);
+    background: lighten($pacific-blue, 5%);
 }
 
 .blue-icon
 {
-    color: $malibu;
+    color: $pacific-blue;
 }
 
 .red-icon
@@ -550,14 +564,14 @@ div.home-box > a
     color: white !important;
     border-radius: 0px !important;
     text-transform: uppercase;
-    background: $curious-blue !important;
+    background: $pacific-blue !important;
     height: 45px !important;
     padding: 0px 30px !important;
 }
 
 .btn-support:hover
 {
-    background: darken($curious-blue, 5%) !important;
+    background: darken($pacific-blue, 5%) !important;
 }
 
 .breadcrumbs-hr
@@ -597,7 +611,7 @@ div.home-box > a
 {
     font-family: FontAwesome;
     content: "\f07c    ";
-    color: $curious-blue;
+    color: darken($pacific-blue, 8%);
 }
 
 .questions-title
@@ -609,11 +623,6 @@ div.home-box > a
     text-transform: uppercase;
     font-size: 20px;
     line-height: 30.625px;
-}
-
-.search-box-single
-{
-    margin-bottom: 40px;
 }
 
 #topics ol
